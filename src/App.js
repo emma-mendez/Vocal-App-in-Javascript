@@ -10,22 +10,19 @@ function App() {
       <header className="App-header">
         <img src='acslogo.png' className="App-logo" alt="logo" />
       </header>
-      <h1>VOCAL TRAINER</h1>
-      <button
-        style={{ color: 'red', backgroundColor: 'black' }}
-      onClick={() => window.alert ('You clicked me')}>Press me</button>
-      <Avocado />
+      <h1></h1>
+      <Server_Button/>
     </div>
   );
 }
 
-function Avocado() {
+function Server_Button() {
   return (
     <>
-    <button style={{ backgroundColor: 'orange', marginRight: 50 }}
-    onClick={() => window.alert ('Ummmmmmmmmm')}>Yummy!</button>
-    <button
-      onClick={() => window.alert("Goodbye!")}
+    <button style={{ backgroundColor: 'orange', margin: 10, alignContent: 'center'}}
+    onClick={() => window.alert('Enter Log In Details')}>Log In</button>
+    <button style={{ backgroundColor: 'lightblue'}}
+      onClick={() => window.alert("Soooo, you want to sing? Sign up!")}
     >Sign Up</button>
     </>
   )
