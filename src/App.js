@@ -1,12 +1,17 @@
-import React, { useEffect }from 'react';
+import React, { useState }from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Dashboard from './components/dashboard/dashboard.js';
 
 
 
 function App() {
 
-
+  const handleClickOnExample2 = async () => {
+    const response = await fetch('http://localhost:1000/example-two')
+    const json = await response.json()
+    window.alert(json.message)
+  }
 
 
   return (
@@ -14,37 +19,19 @@ function App() {
       <header className="App-header">
         <img src='acslogo.png' className="App-logo" alt="logo" />
       </header>
-      <Server_Button/>
-    </div>
+      <Dashboard/>
+      <br></br>
+      {/* <input placeholder='greeting' value={typedGreeting} onChange={(e) => setTypedGreeting(e.target.value)}></input>
+      <br />
+      <input placeholder='Name'></input>
+      <br></br>
+      <input placeholder='Email'></input>
+      <br></br>
+      <input placeholder='Password'></input>
+      < br></br> */}
+</div>
+
   );
-}
-
-function Server_Button() {
-
-  const logInData = async () => {
-    const serverResponse = await fetch('http://localhost:1000/logIn')
-    const data = await serverResponse.json()
-    console.log(data.status)
-    window.alert(data.message)
-  }
-
-  const signUpData = async () => {
-    const serverResponse = await fetch('http://localhost:1000/signUp')
-    const data = await serverResponse.json()
-    console.log(data.status)
-    window.alert(data.message)
-  }
-
-  return (
-    <>
-    <button style={{ backgroundColor: 'orange', margin: 10, alignContent: 'center'}}
-    onClick={logInData}>Log In</button>
-    
-    <button style={{ backgroundColor: 'lightblue'}}
-      onClick={signUpData}
-    >Sign Up</button>
-    </>
-  )
 }
 
 
