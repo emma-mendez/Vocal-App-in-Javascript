@@ -55,6 +55,11 @@ class Dashboard extends Component {
           <h1>Register</h1>
     <form action="/register" method="POST">
     <div>
+        <label for="name">Choose UserName</label>
+        <input type="text" id="name" name="name"
+        required/>
+    </div>
+    <div>
         <label for="name">Name</label>
         <input type="text" id="name" name="name"
         required/>
@@ -91,7 +96,8 @@ class Dashboard extends Component {
 
 export default Dashboard 
 
-// 
+// class="modal-text"
+
       {/* <button onClick={async () => {
         const response = await fetch('http://localhost:1000/signup')
         const json = await response.json()
