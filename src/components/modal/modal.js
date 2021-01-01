@@ -10,7 +10,7 @@ const Modal = ({ handleClose, show, children }) => {
         <button class="buttonf" type="button" onClick={handleClose}>
           Close
         </button>
-          <button class="buttonf" type="button" onClick={handleClose}>
+          <button class="buttonf" type="button" onClick={() => window.alert("Successfully Registed.")}>
           Submit
         </button>
       </section>
