@@ -38,55 +38,51 @@ class Dashboard extends Component {
           <main>
               <Modal show={this.state.showLogin} handleClose={this.hideModalLogin}>
           <h1>Log In</h1>
-    <form action="/login" method="POST">
+    <form  action="/login" method="POST">
     <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email"
+        <label class="label" for="email">Email</label>
+        <input class="text-box" type="email" id="email" name="email"
         required/>
     </div>
     <div>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password"
+        <label class="label" for="password">Password</label>
+        <input class="text-box" class="text-box" type="password" id="password" name="password"
         required/>
     </div>
     </form>
         </Modal>
         <Modal show={this.state.show} handleClose={this.hideModal}>
           <h1>Register</h1>
-    <form action="/register" method="POST">
+    <form class="text" action="/register" method="POST">
     <div>
-        <label for="name">Choose UserName</label>
-        <input type="text" id="name" name="name"
+        <label class="label" for="name">Choose UserName</label>
+        <input class="text-box" type="text" id="name" name="name"
         required/>
     </div>
     <div>
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name"
+        <label class="label" for="name">Name</label>
+        <input class="text-box" type="text" id="name" name="name"
         required/>
     </div>
     <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email"
+        <label class="label" for="email">Email</label>
+        <input class="text-box" type="email" id="email" name="email"
         required/>
     </div>
     <div>
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password"
+        <label class="label" for="password">Password</label>
+        <input class="text-box" type="password" id="password" name="password"
         required/>
     </div>
     </form>
         </Modal>
-        <div class="row mt-5">
-    <div class="col-sm-12">
-            <button type="button" class="button" onClick={this.showModalLogin}>
+            <button class="text-box" type="button" class="button" onClick={this.showModalLogin}>
               Log In
               </button>
               <br></br>
-              <button type="button" class="button" onClick={this.showModal}>
+              <button class="text-box" type="button" class="button" onClick={this.showModal}>
               Register
             </button>
-            </div>
-            </div>
           </main>
         );
       }
@@ -109,10 +105,10 @@ export default Dashboard
           method: 'POST',
           headers: {
             'Accept': 'application/json',
-            'Content-Type': 'application/json'
+            'Content class="text-box" Type': 'application/json'
           },
           body: JSON.stringify({
-            greeting: typedGreeting
+            greeting: class="text-box" typedGreeting
           })
         })
         const json = await response.json()

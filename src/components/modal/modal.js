@@ -1,5 +1,4 @@
 import './modal.css';
-import Dashboard from "../dashboard/dashboard";
 
 const Modal = ({ handleClose, show, children }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
@@ -8,10 +7,10 @@ const Modal = ({ handleClose, show, children }) => {
     <div className={showHideClassName}>
       <section className="modal-main">
         {children}
-        <button type="button" onClick={handleClose}>
+        <button class="buttonf" type="button" onClick={handleClose}>
           Close
         </button>
-          <button type="button" onClick={handleClose}>
+          <button class="buttonf" type="button" onClick={handleClose}>
           Submit
         </button>
       </section>
