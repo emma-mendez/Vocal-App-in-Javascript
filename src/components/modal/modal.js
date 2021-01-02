@@ -26,7 +26,7 @@ const Modal = ({ handleClose, show, children }) => {
         <button class="buttonf" type="button" onClick={handleClose}>
           Close
         </button>
-          <button class="buttonf" type="button" onClick={() => window.alert({submitButton})}>
+          <button class="buttonf" type="button" onClick={submitButton}>
           Submit
         </button>
       </section>
