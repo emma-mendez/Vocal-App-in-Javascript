@@ -3,6 +3,12 @@ import './modal.css';
 const Modal = ({ handleClose, show, children }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
 
+
+  // const tempSubmitButton = () => {onClick={ ""
+
+  // }
+  // }
+
   const submitButton =async () => {
     const response = await fetch('http://localhost:1000/example-one', {
       method: 'POST',
@@ -26,7 +32,7 @@ const Modal = ({ handleClose, show, children }) => {
         <button class="buttonf" type="button" onClick={handleClose}>
           Close
         </button>
-          <button class="buttonf" type="button" onClick={submitButton}>
+          <button class="buttonf" type="button" onClick={""}>
           Submit
         </button>
       </section>
