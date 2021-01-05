@@ -32,7 +32,7 @@ const Modal = ({ handleClose, show, children }) => {
         <button class="buttonf" type="button" onClick={handleClose}>
           Close
         </button>
-          <button class="buttonf" type="button" onClick={""}>
+          <button class="buttonf" type="button" onClick={"`"}>
           Submit
         </button>
       </section>

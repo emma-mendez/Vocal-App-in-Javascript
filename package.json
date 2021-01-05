@@ -3,16 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@popmotion/easing": "^1.0.2",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
     "bootstrap": "^4.5.3",
-    "react": "^17.0.1",
+    "easing": "^1.2.1",
+    "inline-worker": "^1.1.0",
+    "p5": "^0.7.3",
+    "popmotion": "^8.4.1",
+    "react": "^16.5.2",
     "react-bootstrap": "^1.4.0",
-    "react-dom": "^17.0.1",
+    "react-dom": "^16.5.2",
+    "react-p5-wrapper": "^2.3.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "react-speech-recognition": "^3.6.0",
+    "register-service-worker": "^1.7.2",
+    "styled-components": "^5.2.1",
+    "styled-normalize": "^8.0.7",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -38,6 +47,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "inline-worker": "^1.1.0",
+    "lodash": "^4.17.11",
+    "snapsvg": "^0.5.1",
+    "snapsvg-cjs": "0.0.6",
+    "svg.js": "^2.6.6"
   },
   "proxy": "http://localhost:1000"
 }

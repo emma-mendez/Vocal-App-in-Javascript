@@ -42,15 +42,13 @@
 
 /* buttons */
 .button {
+  margin-left: 550px;
   display: center;
   border-block-color: grey;
   border-width: 13px;
   padding: 30px 90px;
-  margin: 4px 2px;
-  margin: 4px 2px;
   margin-block: 50px;
   background-color: orange;
-  margin-right: 50px;
   border-radius: 60px;
 
 }
