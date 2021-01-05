@@ -31,8 +31,8 @@ class App extends Component {
     return (
       <>
       <div className="App">
-        <GlobalStyles />
-        {/* <CassetteTape vizColor="blue" /> */}
+        {/* <GlobalStyles />
+        <CassetteTape vizColor="blue" /> */}
         <Header />
         <Dashboard/>
       <br></br>
@@ -40,7 +40,7 @@ class App extends Component {
       </>
     );
   }
-}  
+}
 
 // function App() {
 
@@ -49,7 +49,7 @@ class App extends Component {
 //     <Header />
 //       <Dashboard/>
 //       <br></br>
-//     </>
+//    ` </>
 //   );
 // }
 

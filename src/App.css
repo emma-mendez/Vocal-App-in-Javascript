@@ -42,18 +42,17 @@
 
 /* buttons */
 .button {
-  margin-left: 550px;
   display: center;
   border-block-color: grey;
   border-width: 13px;
   padding: 30px 90px;
-  margin-block: 50px;
+  margin-block: 55px;
   background-color: orange;
   border-radius: 60px;
 
 }
 
-
+`
 
 /* nav */
 .nav {
