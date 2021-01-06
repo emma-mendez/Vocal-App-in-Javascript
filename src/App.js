@@ -8,6 +8,7 @@ import { createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import {Navbar, Nav, Form, NavDropdown, Button, FormControl} from "react-bootstrap";
+import Home from './pages/home.js'
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -43,6 +44,15 @@ class App extends Component {
             </Router>
       <br></br>
       </div>
+      <div>
+                 <Router>
+            <Route exact path="/home" render={() => (
+                <>
+           <Home/>
+            </>
+             )} />
+            </Router>
+          </div>
       <div>
                  <Router>
             <Route exact path="/studio" render={() => (
