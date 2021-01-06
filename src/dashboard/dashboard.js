@@ -22,9 +22,8 @@ class Dashboard extends Component {
     render() {
         return (
           <main>
-            <h1>Start Now</h1>
               <Modal show={this.state.show} handleClose={this.hideModal}>
-          <h1>Register</h1>
+          <h1>Register </h1>
     <form action="/register" method="POST">
     <div>
         <label for="name">Name</label>
@@ -43,12 +42,6 @@ class Dashboard extends Component {
     </div>
     </form>
         </Modal>
-            <button type="button" onClick={this.showModal}>
-              Log In
-            </button>
-              <button type="button" onClick={this.showModal}>
-              Sign Up
-            </button>
           </main>
         );
       }

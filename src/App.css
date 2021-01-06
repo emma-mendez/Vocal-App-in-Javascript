@@ -52,6 +52,17 @@
 
 }
 
+.buttonPages {
+  margin-left: 550px;  
+  border-block-color: grey;
+  border-width: 13px;
+  padding: 150px 150px;
+  margin-block: 50px;
+  background-color: orange;
+  border-radius: 90px;
+
+}
+
 
 /* nav */
 .nav {
