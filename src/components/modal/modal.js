@@ -30,9 +30,8 @@ const Modal = ({ handleClose, show, children }) => {
           Close
         </button>
           <button class="buttonf" type="button" onClick={ ""}>
-          Submit
+          <Button href="/home">Submit</Button>
         </button>
-        <Button href="/home">Temporary Login Button</Button>
       </section>
     </div>
   );
