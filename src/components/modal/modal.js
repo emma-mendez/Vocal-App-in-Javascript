@@ -1,4 +1,8 @@
 import './modal.css';
+import {BrowserRouter as Router, Route} from "react-router-dom";
+import CassetteTape from "../CassetteTape";
+import React from "react";
+import {Button} from "react-bootstrap";
 
 const Modal = ({ handleClose, show, children }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
@@ -35,6 +39,7 @@ const Modal = ({ handleClose, show, children }) => {
           <button class="buttonf" type="button" onClick={"`"}>
           Submit
         </button>
+        <Button href="/emma">Test</Button>
       </section>
     </div>
   );
