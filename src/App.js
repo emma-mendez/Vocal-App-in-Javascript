@@ -6,8 +6,9 @@ import Header from './components/header.js';
 import CassetteTape from "./components/CassetteTape";
 import { createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import {Navbar, Nav, Form, NavDropdown, Button, FormControl} from "react-bootstrap";
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -32,28 +33,29 @@ class App extends Component {
     return (
       <>
       <div className="App">
-        {/* <GlobalStyles />
-        <CassetteTape vizColor="blue" /> */}
-        <BootstrapNavbar />
-        <Header />
+             <Router>
+            <Route exact path="/" render={() => (
+                <>
+           <Header />
         <Dashboard/>
+        </>
+             )} />
+            </Router>
       <br></br>
       </div>
+      <div>
+                 <Router>
+            <Route exact path="/studio" render={() => (
+                <>
+           <GlobalStyles />
+        <CassetteTape vizColor="blue" />
+            </>
+             )} />
+            </Router>
+          </div>
       </>
     );
   }
 }
-
-// function App() {
-
-//   return (
-//     <>
-//     <Header />
-//       <Dashboard/>
-//       <br></br>
-//    ` </>
-//   );
-// }
-
 
 export default App;

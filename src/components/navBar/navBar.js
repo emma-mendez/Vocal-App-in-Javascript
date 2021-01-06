@@ -40,7 +40,7 @@ class BootstrapNavbar extends React.Component{
                             <Switch>
                                 <Route exact path="/">
                                 </Route>
-                                <Route path="/about-us">
+                                <Route path="/studio">
                                 </Route>
                             </Switch>
                         </Router>
