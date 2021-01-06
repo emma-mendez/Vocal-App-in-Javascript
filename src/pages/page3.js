@@ -2,21 +2,21 @@ import React from 'react';
 import '../App.css';
 import {Button} from "react-bootstrap";
 
-const Home = () =>{
+const Page3 = () =>{
 
     return (
         <div>
             <header className="App-header">
             <img src='acslogo.png' className="logo" alt="logo" />
             </header>
-            <button class="buttonPages"> SING</button>
+            <button class="buttonPages"> STATS</button>
             <button class="buttonPages">
-            <Button href="/studio">STUDIO</Button>
+            <Button href="/">ZING!!</Button>
             </button>
         </div>
     )
 }
 
-export default Home
+export default Page3
 
 

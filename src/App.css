@@ -7,6 +7,12 @@
   pointer-events: none;
 }
 
+.logo {
+  margin-left: 550px;  
+  height: 40vmin;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -53,14 +59,13 @@
 }
 
 .buttonPages {
-  margin-left: 550px;  
+  margin-left: 575px;  
   border-block-color: grey;
   border-width: 13px;
   padding: 150px 150px;
   margin-block: 50px;
   background-color: orange;
   border-radius: 90px;
-
 }
 
 
