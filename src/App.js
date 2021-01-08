@@ -1,8 +1,4 @@
 import React, { useState, Component }from 'react';
-// import Swiper JS
-import { Swiper, SwiperSlide } from 'swiper/react';
-// import Swiper styles
-import 'swiper/swiper-bundle.css';
 import './App.css';
 import Dashboard from './components/dashboard/dashboard.js';
 import BootstrapNavbar from "./components/navBar/navBar.js";
@@ -15,18 +11,7 @@ import {Navbar, Nav, Form, NavDropdown, Button, FormControl} from "react-bootstr
 import Home from './pages/home.js'
 import Page2 from './pages/page2';
 import Page3 from './pages/page3';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// swiper tutorial - https://www.youtube.com/watch?v=l4kFO6VQPfA
-const slides = [];
 
- for (let i = 0; i < 3; i += 1) {
-   slides.push(
-    <SwiperSlide key={ 'slide-${i}'}>
-      <img src={'https://picsum.photos/id/${i+1}/500/300'} 
-      alt={'Slide ${i}'} />
-    </SwiperSlide>
-   );
- }
 
 
 const GlobalStyles = createGlobalStyle`
@@ -61,8 +46,6 @@ class App extends Component {
       <br></br>
       </div>
       <React.Fragment>
-        <Swiper id='main'>
-          {slides}
       <div>
                  <Router>
             <Route exact path="/home" render={() => (
@@ -72,7 +55,6 @@ class App extends Component {
              )} />
             </Router>
           </div>
-          </Swiper>
       <div>
                  <Router>
             <Route exact path="/page2" render={() => (
@@ -82,7 +64,6 @@ class App extends Component {
              )} />
             </Router>
           </div>
-
       <div>
                  <Router>
             <Route exact path="/page3" render={() => (
