@@ -24,16 +24,19 @@ const Modal = ({ handleClose, show, children }) => {
   }
 
   const handleRegister =async () => {
-    const response = await fetch('http://localhost:1000/example-one', {
+    const response = await fetch('http://localhost:1000/signup', {
       method: 'POST',
       headers: {
         'Accept' : 'application/json',
         'Content-Type' : 'application/json'
       },
       body: JSON.stringify({
-        user: 'details'
+        userName: 'mr blobby',
+        password: 'pink123'
       })
     })
+    const json = await response.json()
+    window.alert(json.message)
   console.log("Good to GO Emma!")
   }
 
