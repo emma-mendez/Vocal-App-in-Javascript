@@ -31,8 +31,8 @@ const Modal = ({ handleClose, show, children }) => {
         'Content-Type' : 'application/json'
       },
       body: JSON.stringify({
-        userName: 'mr blobby',
-        password: 'pink123'
+        userName: 'Harjeet',
+        password: 'GirrrllllL!!'
       })
     })
     const json = await response.json()

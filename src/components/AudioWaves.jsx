@@ -40,8 +40,7 @@ class AudioWaves extends React.Component {
       <WavesContainer>
         <div>
           <h2>
-            Don’t be shy! Press play. Let the loop play! <br />
-            When you’re ready press rec and record your freestyle!
+            Record your freestyle!
           </h2>
 
           {waves}
