@@ -76,6 +76,7 @@ class Dashboard extends Component {
     </div>
     </form>
         </Modal>
+        
             <button class="text-box" type="button" class="button" onClick={this.showModalLogin}>
               Log In
               </button>
