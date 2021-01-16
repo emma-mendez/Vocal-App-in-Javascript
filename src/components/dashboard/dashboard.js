@@ -56,22 +56,22 @@ class Dashboard extends Component {
     <form class="text" action="/register" method="POST">
     <div>
         <label class="label" for="name">Choose UserName</label>
-        <input class="text-box" type="text" id="name" name="name"
+        <input class="text-box" type="text" id="name" name="name" value={this.state.cname}
         required/>
     </div>
     <div>
         <label class="label" for="name">Name</label>
-        <input class="text-box" type="text" id="name" name="name"
+        <input class="text-box" type="text" id="name" name="name" value={this.state.name}
         required/>
     </div>
     <div>
         <label class="label" for="email">Email</label>
-        <input class="text-box" type="email" id="email" name="email"
+        <input class="text-box" type="email" id="email" name="email" value={this.state.email}
         required/>
     </div>
     <div>
         <label class="label" for="password">Password</label>
-        <input class="text-box" type="password" id="password" name="password"
+        <input class="text-box" type="password" id="password" name="password" value={this.state.password}
         required/>
     </div>
     </form>

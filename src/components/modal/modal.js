@@ -24,20 +24,23 @@ const Modal = ({ handleClose, show, children }) => {
   }
 
   const handleRegister =async () => {
-    const response = await fetch('http://localhost:1000/signup', {
-      method: 'POST',
-      headers: {
-        'Accept' : 'application/json',
-        'Content-Type' : 'application/json'
-      },
-      body: JSON.stringify({
-        userName: 'mr blobby',
-        password: 'pink123'
-      })
-    })
-    const json = await response.json()
-    window.alert(json.message)
+    // const response = await fetch('http://localhost:1000/signup', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Accept' : 'application/json',
+    //     'Content-Type' : 'application/json'
+    //   },
+    //   body: JSON.stringify({
+    //     userName: 'mr blobby',
+    //     password: 'pink123'
+    //   })
+    // })
+    // const json = await response.json()
+    // window.alert(json.message)
   console.log("Good to GO Emma!")
+    console.log({children})
+    // console.log("cname: " + this.state.cname);
+    // console.log("Email: " + this.state.email);
   }
 
 
