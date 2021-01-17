@@ -1,32 +1,28 @@
-import React, { useState} from "react";
+import React, { useState } from 'react';
 
 
 function Form() {
-    const [typedName, setTypedName] = useState();
-    const typedPassword = "";
-
-
-return (
-    <div>
-      <input
-        placeholder="Username"
-        value={typedName}
+    const [typedName, setTypedName] = useState("");
+    const [typedPassword, setTypedPassword] = useState("");
+  
+    return (
+      <div>
+          <h1>Log In</h1>
+        <input
+          placeholder="Username"
+          value={typedName}
+          onChange={(event) => {
+            setTypedName(event.target.value);
+          }}
+        />
+        <input 
+        placeholder="Password" 
+        value={typedPassword} 
         onChange={(event) => {
-          setTypedName(event.target.value);
-        }}
-      />
-      <input placeholder="Password" value={typedPassword} />
-      <button
-        onClick={() => {
-          console.log(
-            `Clicked the button with a username of ${typedName} and a password of ${typedPassword}`
-          );
-        }}
-      >
-        Submit
-      </button>
-    </div>
-  );
-}
-
-export default Form;
+            setTypedPassword(event.target.value);
+        }}/>
+      </div>
+    );
+  }
+  
+    export default Form;

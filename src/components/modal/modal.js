@@ -1,6 +1,7 @@
 import './modal.css';
 import React from "react";
-import {Button} from "react-bootstrap";
+import Form from '../Submit';
+import Submit from '../Submit';
 
 const Modal = ({ handleClose, show, children }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
@@ -49,27 +50,15 @@ const Modal = ({ handleClose, show, children }) => {
           Close
         </button>
           <button class="buttonf" type="button" onClick={ ""}>
+            <Submit>
             <button onClick={handleRegister}>Register</button>
+            </Submit>
           {/* <Button href="/home">Log In</Button> */}
         </button>
       </section>
     </div>
   );
 
-
-  // return (
-  //   <div className={showHideRegistration}>
-  //     <section className="modal-main">
-  //       {children}
-  //       <button class="buttonf" type="button">
-  //         Close
-  //       </button>
-  //       <button class="buttonf" type="button" onClick={handleClose}>
-  //         Submit
-  //       </button>
-  //     </section>
-  //   </div>
-  // )
 };
 
 
@@ -77,8 +66,3 @@ const Modal = ({ handleClose, show, children }) => {
 
 export default Modal;
 
-
-// 
-{/* <button class="buttonf" type="button" onClick={handleClose}>
-Close
-</button> */}

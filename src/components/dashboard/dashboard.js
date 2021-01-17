@@ -1,18 +1,28 @@
 import React, { Component } from "react";
+import Form from "../Form.js";
 import Modal from '../modal/modal.js';
+import RegistrationForm from "../RegistrationForm.js";
 
 class Dashboard extends Component {
   constructor() {
     super();
     this.state = {
-      show: false
+      show: false,
+      showLogin: false,
+
     };
-    this.showModalLogin = this.showModalLogin.bind(this);
-    this.hideModalLogin = this.hideModalLogin.bind(this);
     this.showModal = this.showModal.bind(this);
     this.hideModal = this.hideModal.bind(this);
-    
+    this.showModalLogin = this.showModalLogin.bind(this);
+    this.hideModalLogin = this.hideModalLogin.bind(this);
   }
+  showModal = () => {
+    this.setState({ show: true });
+  };
+
+  hideModal = () => {
+    this.setState({ show: false });
+  };
 
   showModalLogin = () => {
     this.setState({ showLogin: true });
@@ -22,70 +32,40 @@ class Dashboard extends Component {
     this.setState({ showLogin: false });
   };
 
-
-  showModal = () => {
-    this.setState({ show: true });
-  };
-
-  hideModal = () => {
-    this.setState({ show: false });
-  };
-
   
 
     render() {
-        return (
-          <main>
-              <Modal show={this.state.showLogin} handleClose={this.hideModalLogin}>
-          <h1>Log In</h1>
-    <form  action="/login" method="POST">
-    <div>
-        <label class="label" for="email">Email</label>
-        <input class="text-box" type="email" id="email" name="email"
-        required/>
-    </div>
-    <div>
-        <label class="label" for="password">Password</label>
-        <input class="text-box" class="text-box" type="password" id="password" name="password"
-        required/>
-    </div>
-    </form>
-        </Modal>
-        <Modal show={this.state.show} handleClose={this.hideModal}>
-          <h1>Register</h1>
-    <form class="text" action="/register" method="POST">
-    <div>
-        <label class="label" for="name">Choose UserName</label>
-        <input class="text-box" type="text" id="name" name="name"
-        required/>
-    </div>
-    <div>
-        <label class="label" for="name">Name</label>
-        <input class="text-box" type="text" id="name" name="name"
-        required/>
-    </div>
-    <div>
-        <label class="label" for="email">Email</label>
-        <input class="text-box" type="email" id="email" name="email"
-        required/>
-    </div>
-    <div>
-        <label class="label" for="password">Password</label>
-        <input class="text-box" type="password" id="password" name="password"
-        required/>
-    </div>
-    </form>
-        </Modal>
-        
-            <button class="text-box" type="button" class="button" onClick={this.showModalLogin}>
+        return (   
+          <> 
+          <Modal show={this.state.showLogin} handleClose={this.hideModalLogin}>
+          <Form />
+          </Modal>
+          <div>  
+          <button 
+          class="text-box" 
+          type="button" 
+          class="button"
+          onClick={this.showModalLogin}>
               Log In
-              </button>
+          </button>
+              </div>
               <br></br>
-              <button class="text-box" type="button" class="button" onClick={this.showModal}>
+              <div>
+        <Modal show={this.state.show} handleClose={this.hideModal}>
+        <RegistrationForm />
+        </Modal>
+              <button 
+              class="text-box" 
+              type="button" 
+              class="button" 
+              onClick={this.showModal}>
               Register
             </button>
-          </main>
-        );
+            </div>        
+            </>
+
+            
+            );
       }
 
 
