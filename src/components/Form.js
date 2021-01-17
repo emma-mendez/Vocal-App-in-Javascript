@@ -9,6 +9,7 @@ function Form() {
       <div>
           <h1>Log In</h1>
         <input
+          class="form"
           placeholder="Username"
           value={typedName}
           onChange={(event) => {
@@ -16,6 +17,7 @@ function Form() {
           }}
         />
         <input 
+        class="form"
         placeholder="Password" 
         value={typedPassword} 
         onChange={(event) => {

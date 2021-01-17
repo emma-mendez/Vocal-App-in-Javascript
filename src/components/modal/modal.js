@@ -51,7 +51,8 @@ const Modal = ({ handleClose, show, children }) => {
         </button>
           <button class="buttonf" type="button" onClick={ ""}>
             <Submit>
-            <button onClick={handleRegister}>Register</button>
+            <button 
+            class="buttonf" onClick={handleRegister}>Register</button>
             </Submit>
           {/* <Button href="/home">Log In</Button> */}
         </button>

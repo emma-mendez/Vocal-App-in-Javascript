@@ -9,26 +9,34 @@ function RegistrationForm() {
 
     return (
       <div>
-          <h1>Log In</h1>
+          <h1>Register</h1>
         <input
+        class="form"
           placeholder="Choose Username"
           value={typedName}
           onChange={(event) => {
             setTypedName(event.target.value);
           }}
-        />
+        /> 
+        <br></br>
         <input 
+        class="form"
         placeholder="First Name" 
         value={typedFN} 
         onChange={(event) => {
           setTypedFN(event.target.value);
         }}/>
+        <br></br>
          <input 
+        class="form"
         placeholder="Last Name" 
         value={typedLN} 
         onChange={(event) => {
           setTypedLN(event.target.value);
-        }}/> <input 
+        }}/> 
+        <br></br>
+        <input 
+        class="form"
         placeholder="Choose Password" 
         value={typedPassword} 
         onChange={(event) => {
