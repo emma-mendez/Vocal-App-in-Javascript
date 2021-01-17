@@ -58,19 +58,19 @@ class Dashboard extends Component {
   }
 
   handleLogin =async () => {
-    // const response = await fetch('http://localhost:1000/signup', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Accept' : 'application/json',
-    //     'Content-Type' : 'application/json'
-    //   },
-    //   body: JSON.stringify({
-    //     userName: this.state.email,
-    //     password: this.state.password
-    //   })
-    // })
-    // const json = await response.json()
-    // window.alert(json.message)
+    const response = await fetch('http://localhost:1000/signup', {
+      method: 'POST',
+      headers: {
+        'Accept' : 'application/json',
+        'Content-Type' : 'application/json'
+      },
+      body: JSON.stringify({
+        userName: this.state.email,
+        password: this.state.password
+      })
+    })
+    const json = await response.json()
+    window.alert(json.message)
   console.log("Good to GO Emma!")
 
   }
@@ -124,7 +124,7 @@ class Dashboard extends Component {
         <input class="text-box" type="password" id="password" name="password" value={this.state.password}
         required/>
     </div>
-       <button className="buttonf" type="button" onClick={this.hideModalLogin}>
+       <button className="buttonf" type="button" onClick={this.hideModal}>
                         Close
        </button>
         <button className="buttonf" type="submit">
