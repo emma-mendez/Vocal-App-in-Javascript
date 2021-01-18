@@ -11,6 +11,7 @@ import {Navbar, Nav, Form, NavDropdown, Button, FormControl} from "react-bootstr
 import Home from './pages/home.js'
 import Page2 from './pages/page2';
 import Page3 from './pages/page3';
+import Journal from './pages/journal';
 
 
 
@@ -69,6 +70,15 @@ class App extends Component {
             <Route exact path="/page3" render={() => (
                 <>
            <Page3/>
+            </>
+             )} />
+            </Router>
+          </div>
+          <div>
+                 <Router>
+            <Route exact path="/journal" render={() => (
+                <>
+           <Journal/>
             </>
              )} />
             </Router>
