@@ -58,9 +58,10 @@ function Journal() {
   
     return (
       <>
-      <div class="container">
+      <div class="container-fluid">
+      <div class="row">
+  <div class="col-md-1">
         <h1>Voice Notes</h1>
-          <Row>
   <table class="table-responsive">
         <table class="table">
             <h2>Current Note</h2>
@@ -75,7 +76,8 @@ function Journal() {
             
             <p>{note}</p>
             </table>
-          </Row>
+          </div>
+          </div>
           <div class="table-responsive">
   <table class="table">
             <h2>Notes</h2>
@@ -83,7 +85,7 @@ function Journal() {
               <p key={n}>{n}</p>
             ))}
           </table>
-</div>
+            </div>
         </div>
       </>
     )
