@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col} from 'react-bootstrap'
 
 
 const SpeechRecognition =
@@ -60,8 +59,7 @@ function Journal() {
       <>
       <div class="container-fluid">
       <div class="row">
-  <div class="col-md-1">
-        <h1>Voice Notes</h1>
+      <div class="col-xs-6 col-sm-3">                  <h1>Voice Notes</h1>
   <table class="table-responsive">
         <table class="table">
             <h2>Current Note</h2>
