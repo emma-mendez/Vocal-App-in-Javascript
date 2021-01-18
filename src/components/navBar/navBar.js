@@ -42,6 +42,8 @@ class BootstrapNavbar extends React.Component{
                                 </Route>
                                 <Route path="/studio">
                                 </Route>
+                                <Route path="/journal">
+                                </Route>
                             </Switch>
                         </Router>
                     </div>

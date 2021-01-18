@@ -11,7 +11,7 @@ const Page2 = () =>{
             </header>
             <button class="buttonPages"> CON4DZ</button>
             <button class="buttonPages">
-            <Button href="/studio">JOURNAL</Button>
+            <Button href="/journal">JOURNAL</Button>
             </button>
         </div>
     )
