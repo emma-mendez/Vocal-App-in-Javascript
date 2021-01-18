@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Row, Col} from 'react-bootstrap'
 
 
 const SpeechRecognition =
@@ -56,9 +58,11 @@ function Journal() {
   
     return (
       <>
+      <div class="container">
         <h1>Voice Notes</h1>
-        <div className="container">
-          <div className="box">
+          <Row>
+  <table class="table-responsive">
+        <table class="table">
             <h2>Current Note</h2>
             {isListening ? <span>🎙️</span> : <span>🛑🎙️</span>}
             <button onClick={handleSaveNote} disabled={!note}>
@@ -67,17 +71,25 @@ function Journal() {
             <button onClick={() => setIsListening(prevState => !prevState)}>
               Start/Stop
             </button>
+            </table>
+            
             <p>{note}</p>
-          </div>
-          <div className="box">
+            </table>
+          </Row>
+          <div class="table-responsive">
+  <table class="table">
             <h2>Notes</h2>
             {savedNotes.map(n => (
               <p key={n}>{n}</p>
             ))}
-          </div>
+          </table>
+</div>
         </div>
       </>
     )
   }
+
+
+
 
 export default Journal

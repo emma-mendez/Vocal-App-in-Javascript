@@ -98,3 +98,6 @@
   margin-bottom: 25px;
 
 }
+.table-responsive {
+  border: blue;
+}
