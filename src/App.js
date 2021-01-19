@@ -44,47 +44,27 @@ class App extends Component {
         </>
              )} />
             </Router>
-      <br></br>
-      </div>
-      <React.Fragment>
-      <div>
                  <Router>
             <Route exact path="/home" render={() => (
                 <>
            <Home/>
             </>
              )} />
-            </Router>
-          </div>
-      <div>
-                 <Router>
             <Route exact path="/page2" render={() => (
                 <>
            <Page2/>
             </>
              )} />
-            </Router>
-          </div>
-      <div>
-                 <Router>
             <Route exact path="/page3" render={() => (
                 <>
            <Page3/>
             </>
              )} />
-            </Router>
-          </div>
-          <div>
-                 <Router>
             <Route exact path="/journal" render={() => (
                 <>
            <Journal/>
             </>
              )} />
-            </Router>
-          </div>
-      <div>
-                 <Router>
             <Route exact path="/studio" render={() => (
                 <>
            <GlobalStyles />
@@ -92,8 +72,7 @@ class App extends Component {
             </>
              )} />
             </Router>
-          </div>
-          </React.Fragment>
+            </div>
       </>
     );
   }
