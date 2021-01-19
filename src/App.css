@@ -16,7 +16,7 @@
 @media (max-width) { }
 
 
-App-header {
+.App-header {
   background-color: white;
   min-height: 100vh;
   display: flex;
@@ -139,7 +139,7 @@ App-header {
 
 .note {
   border-block-color: grey;
-  padding-top: 20px;
+  padding-left: 20px;
   padding-top: 27px;
   margin-top: 25px;
   padding-bottom: 20px;
@@ -149,3 +149,8 @@ App-header {
 border-width: 5px;}
   
 
+.boarder {
+  margin-top: 25px;
+  margin-block-end: 25px;
+  background-color: white;
+}

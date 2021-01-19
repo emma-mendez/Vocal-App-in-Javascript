@@ -62,10 +62,9 @@ function Journal() {
       <div class="col-xs-12 col-sm-6 col-md-8">
       <h1 class="h1">Voice Notes</h1>
       <div class="table-responsive">
-        <table>
             <h2 class="h2">Current Note</h2>
             <div class="p">
-            {isListening ? <span >🎙️</span> : <span>🛑🎙️</span>}
+            { isListening ? <span >🎙️</span> : <span>🛑🎙️</span>}
             <br></br>
             <button class="buttonJ" 
             onClick={() => setIsListening(prevState => !prevState)}>
@@ -75,10 +74,11 @@ function Journal() {
             Save 
             </button>
             </div>
-            </table>
+            <table class="boarder"> 
             <div>
             <p class="note">{note}</p>
             </div>
+            </table>
             </div>
           </div>
           </div>
@@ -89,9 +89,14 @@ function Journal() {
             <div class="p">
             {savedNotes.map(n => (
               <p key={n}>{n}</p>
-            ))}
+            ))}  
             <br></br>
             </div>
+            <table class="boarder"> 
+            <div>
+            <p class="note">{note}</p>
+            </div>
+            </table>
             <button class= "buttonJ" >Download</button>
         </table>
       </div> 
