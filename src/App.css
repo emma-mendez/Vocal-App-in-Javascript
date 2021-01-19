@@ -13,7 +13,10 @@
   }
 }
 
-.App-header {
+@media (max-width) { }
+
+
+App-header {
   background-color: white;
   min-height: 100vh;
   display: flex;
@@ -63,6 +66,17 @@
 
 }
 
+.buttonJ {
+  display: center;
+  border-block-color: grey;
+  border-width: 3px;
+  padding: 10px 30px;
+  margin-left: 15px;
+  background-color: orange;
+  border-radius: 60px;
+
+}
+
 .buttonPages {
   margin-left: 575px;  
   border-block-color: grey;
@@ -73,6 +87,19 @@
   border-radius: 90px;
 }
 
+.h1 {
+  margin-left: 135px;
+  padding-bottom: 50px;
+}
+
+.h2 {
+  margin-left: 5px;
+}
+
+
+.p {
+    margin-left: 29px;
+}
 .wordOnly {
   border-style: none;
   background-color: orange;
@@ -98,6 +125,27 @@
   margin-bottom: 25px;
 
 }
-.table-responsive {
-  border: blue;
+
+.table-responsive{
+  display: center;
+  padding: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+  background-color: rgb(245, 242, 238);
+  border-radius: 20px;
+  box-sizing: 50px;
 }
+
+
+.note {
+  border-block-color: grey;
+  padding-top: 20px;
+  padding-top: 27px;
+  margin-top: 25px;
+  padding-bottom: 20px;
+  padding-right: 270px;
+  margin-left: 25px;
+  border-radius: 29px;
+border-width: 5px;}
+  
+

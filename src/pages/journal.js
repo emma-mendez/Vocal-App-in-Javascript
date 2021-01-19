@@ -57,34 +57,45 @@ function Journal() {
   
     return (
       <>
-      <div class="container-fluid">
+      <div class="container">
       <div class="row">
-      <div class="col-xs-6 col-sm-3">                  <h1>Voice Notes</h1>
-  <table class="table-responsive">
-        <table class="table">
-            <h2>Current Note</h2>
-            {isListening ? <span>🎙️</span> : <span>🛑🎙️</span>}
-            <button onClick={handleSaveNote} disabled={!note}>
-              Save Note
-            </button>
-            <button onClick={() => setIsListening(prevState => !prevState)}>
+      <div class="col-xs-12 col-sm-6 col-md-8">
+      <h1 class="h1">Voice Notes</h1>
+      <div class="table-responsive">
+        <table>
+            <h2 class="h2">Current Note</h2>
+            <div class="p">
+            {isListening ? <span >🎙️</span> : <span>🛑🎙️</span>}
+            <br></br>
+            <button class="buttonJ" 
+            onClick={() => setIsListening(prevState => !prevState)}>
               Start/Stop
             </button>
+            <button class= "buttonJ" onClick={handleSaveNote} disabled={!note}>
+            Save 
+            </button>
+            </div>
             </table>
-            
-            <p>{note}</p>
-            </table>
+            <div>
+            <p class="note">{note}</p>
+            </div>
+            </div>
           </div>
           </div>
+          <br></br>
           <div class="table-responsive">
-  <table class="table">
-            <h2>Notes</h2>
+          <table >
+            <h2 class="h2">Notes</h2>
+            <div class="p">
             {savedNotes.map(n => (
               <p key={n}>{n}</p>
             ))}
-          </table>
+            <br></br>
             </div>
-        </div>
+            <button class= "buttonJ" >Download</button>
+        </table>
+      </div> 
+      </div> 
       </>
     )
   }
