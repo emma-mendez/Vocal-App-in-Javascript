@@ -96,14 +96,12 @@ function Journal() {
                     </p></div>
    
             </table>
-            <table class="boarder"> 
             <br></br>
             </table>
             <div>
             <p class="note"></p>
             </div>
             <button class= "buttonJ" >Download</button>
-        </table>
       </div> 
       </div> 
       </>
