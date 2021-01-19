@@ -100,6 +100,11 @@
 .p {
     margin-left: 29px;
 }
+
+.p2 {
+  margin-left: 29px;
+}
+
 .wordOnly {
   border-style: none;
   background-color: orange;
@@ -127,6 +132,16 @@
 }
 
 .table-responsive{
+  display: center;
+  padding: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
+  background-color: rgb(245, 242, 238);
+  border-radius: 20px;
+  box-sizing: 50px;
+}
+
+.table-responsive2{
   display: center;
   padding: 20px;
   margin-right: 50px;

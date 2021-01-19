@@ -59,9 +59,10 @@ function Journal() {
       <>
       <div class="container">
       <div class="row">
-      <div class="col-xs-12 col-sm-6 col-md-8">
+      <div class="col-lg-12 col-lg-6 col-lg-8">
       <h1 class="h1">Voice Notes</h1>
       <div class="table-responsive">
+      <table>
             <h2 class="h2">Current Note</h2>
             <div class="p">
             { isListening ? <span >🎙️</span> : <span>🛑🎙️</span>}
@@ -79,24 +80,29 @@ function Journal() {
             <p class="note">{note}</p>
             </div>
             </table>
+            </table>
             </div>
           </div>
           </div>
           <br></br>
-          <div class="table-responsive">
+          <div class="table-responsive2">
           <table >
             <h2 class="h2">Notes</h2>
-            <div class="p">
+            <table class="boarder"> 
+            <div >
+                <p class="note">
             {savedNotes.map(n => (
               <p key={n}>{n}</p>
-            ))}  
-            <br></br>
-            </div>
-            <table class="boarder"> 
-            <div>
-            <p class="note">{note}</p>
-            </div>
+            ))}          
+                    </p></div>
+   
             </table>
+            <table class="boarder"> 
+            <br></br>
+            </table>
+            <div>
+            <p class="note"></p>
+            </div>
             <button class= "buttonJ" >Download</button>
         </table>
       </div> 
