@@ -45,17 +45,10 @@ const Modal = ({ handleClose, show, children }) => {
   return (
     <div className={showHideClassName}>
       <section className="modal-main">
+         <button type="button" className="close" aria-label="Close" onClick={handleClose}>
+          <span aria-hidden="true">&times;</span>
+        </button>
         {children}
-        <button class="buttonf" type="button" onClick={handleClose}>
-          Close
-        </button>
-          <button class="buttonf" type="button" onClick={ ""}>
-            <Submit>
-            <button 
-            class="buttonf" onClick={handleRegister}>Register</button>
-            </Submit>
-          {/* <Button href="/home">Log In</Button> */}
-        </button>
       </section>
     </div>
   );

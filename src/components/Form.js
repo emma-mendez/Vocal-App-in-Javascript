@@ -1,29 +1,35 @@
 import React, { useState } from 'react';
-
+import {useForm} from "react-hook-form";
 
 function Form() {
-    const [typedName, setTypedName] = useState("");
-    const [typedPassword, setTypedPassword] = useState("");
-  
+
+    const {register, handleSubmit} = useForm();
+
+    const onSubmit = data => console.log(data);
+
+
     return (
       <div>
           <h1>Log In</h1>
+          <form onSubmit={handleSubmit(onSubmit)}>
         <input
           class="form"
+          ref={register}
+          name="username"
           placeholder="Username"
-          value={typedName}
-          onChange={(event) => {
-            setTypedName(event.target.value);
-          }}
         />
         <input 
         class="form"
+        ref={register}
+        name="password"
+        type="password"
         placeholder="Password" 
-        value={typedPassword} 
-        onChange={(event) => {
-            setTypedPassword(event.target.value);
-        }}/>
+        />
+        <br/>
+        <button class="buttonf">Submit</button>
+        </form>
       </div>
+
     );
   }
   
