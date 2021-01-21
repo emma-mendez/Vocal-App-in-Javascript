@@ -37,8 +37,8 @@ class Dashboard extends Component {
     render() {
         return (   
           <> 
-          <Modal show={this.state.showLogin} handleClose={this.hideModalLogin}>
-          <Form />
+          <Modal show={this.state.showLogin}>
+          <Form handleClose={this.hideModalLogin}/>
           </Modal>
           <div>  
           <button 
