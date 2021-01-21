@@ -12,6 +12,7 @@ import Home from './pages/home.js'
 import Page2 from './pages/page2';
 import Page3 from './pages/page3';
 import Journal from './pages/journal';
+import FaceRecognition from './components/FaceRecognition';
 
 
 
@@ -71,7 +72,13 @@ class App extends Component {
         <CassetteTape vizColor="blue" />
             </>
              )} />
+             <Route exact path="/game" render={() => (
+              <>
+         <FaceRecognition/>
+          </>
+           )} />
             </Router>
+            
             </div>
       </>
     );
