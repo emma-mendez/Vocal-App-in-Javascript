@@ -11,14 +11,14 @@ const Home = () =>{
             <header>
             <img src='acslogo.png' className="logo" alt="logo" />
             </header>
-            {/* <React.Fragment>
-                <Swiper id="main"> */}
+            <React.Fragment>
+                {/* <Swiper id="main"> */}
                     <button class="buttonPages"> SING</button>
                     <button class="buttonPages">
-                    <Button ref="/studio">STUDIO</Button>
+                    <Button href="/studio">STUDIO</Button>
                     </button>
-                {/* </Swiper>
-            </React.Fragment> */}
+                {/* </Swiper> */}
+            </React.Fragment>
         </div>
         </>
     );

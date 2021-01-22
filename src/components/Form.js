@@ -1,12 +1,6 @@
 import React, { useState, Redirect  } from 'react';
 import { useForm} from "react-hook-form";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Prompt
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link, Prompt} from "react-router-dom";
 
 
 
@@ -64,8 +58,6 @@ function Form({ handleClose }) {
   console.log("Good to GO Emma!")
   handleClose()
   }
-
-    
     
     return ( 
       <div>

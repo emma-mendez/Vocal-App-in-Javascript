@@ -1,13 +1,11 @@
-import React, { useState, Component }from 'react';
+import React, { Component }from 'react';
 import './App.css';
 import Dashboard from './components/dashboard/dashboard.js';
-import BootstrapNavbar from "./components/navBar/navBar.js";
 import Header from './components/header.js';
 import CassetteTape from "./components/CassetteTape";
 import { createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import {Navbar, Nav, Form, NavDropdown, Button, FormControl} from "react-bootstrap";
 import Home from './pages/home.js'
 import Page2 from './pages/page2';
 import Page3 from './pages/page3';
@@ -46,7 +44,7 @@ class App extends Component {
              )} />
             </Router>
                  <Router>
-            <Route exact path="/home" render={() => (
+            <Route exact path="/Home" render={() => (
                 <>
            <Home/>
             </>
