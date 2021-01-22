@@ -27,6 +27,11 @@
   color: white;
 }
 
+
+.App-header2 {
+  
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -78,14 +83,17 @@
 }
 
 .buttonPages {
-  margin-left: 575px;  
   border-block-color: grey;
-  border-width: 13px;
+  margin-right: 60px;
+  /* border-width: 13px; */
   padding: 150px 150px;
   margin-block: 50px;
   background-color: orange;
   border-radius: 90px;
+  /* display: center; */
+  border-width: 20px;
 }
+
 
 .h1 {
   margin-left: 135px;
