@@ -11,6 +11,7 @@ import Page2 from './pages/page2';
 import Page3 from './pages/page3';
 import Journal from './pages/journal';
 import FaceRecognition from './components/FaceRecognition';
+import { UserForm } from './components/course/UserForm'
 
 
 
@@ -75,6 +76,11 @@ class App extends Component {
          <FaceRecognition/>
           </>
            )} />
+           <Route exact path="/course" render={() => (
+            <>
+        <UserForm />
+        </>
+         )} />
             </Router>
             
             </div>

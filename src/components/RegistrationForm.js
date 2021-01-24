@@ -74,7 +74,7 @@ function RegistrationForm({ handleClose }) {
         ref={register}
         name="password"
         type="password"
-        placeholder="Password" />
+        placeholder="Choose New Password" />
         <br/>
          <button 
         onSubmit={event => {
