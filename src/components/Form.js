@@ -13,7 +13,7 @@ function Form({ handleClose }) {
   
 
   const onSubmit = async () => {
-    const response = await fetch('http://localhost:1000/signup', {
+    const response = await fetch('http://localhost:1000/login', {
       method: 'POST',
       headers: {
         'Accept' : 'application/json',
