@@ -1,16 +1,19 @@
-import React, { useState  } from 'react';
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import { useForm} from "react-hook-form";
 import { BrowserRouter as Router, Switch, Route, Link, Prompt} from "react-router-dom";
 
 
 
-function Form({ handleClose }) {
+function Form() {
 
   const {register, handleSubmit} = useForm();
   const [inputUserName, setUserName] = useState("");
   const [inputUserPassword, setUserPassword] = useState("");
   let [isBlocking, setIsBlocking] = useState(false);
-  
+  let history = useHistory();
+  const redirect = () => {
+    history.push('/Home')}
 
   const onSubmit = async () => {
     const response = await fetch('http://localhost:1000/login', {
@@ -30,7 +33,8 @@ function Form({ handleClose }) {
     console.log(inputUserPassword)
 
   console.log("Good to GO Emma!")
-  handleClose()
+  redirect()
+  
   }
     
     return ( 
