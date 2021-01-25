@@ -29,7 +29,7 @@ const Page3 = () =>{
             </header>
             <button class="buttonPages" 
             onClick={redirectStats}> 
-            <p class="button-inside">STATS</p>
+            <p class="button-inside"><h1 class='h2'>STATS</h1></p>
             </button>
             <br></br>
             <button class="button-nav" onClick={previous}>BACK</button>
@@ -37,7 +37,7 @@ const Page3 = () =>{
             <br></br>
             <button class="buttonPages" 
             onClick={redirect}>
-            <p class="button-inside">ZING!</p>
+            <p class="button-inside"><h1 class='h2'>ZING!</h1></p>
             </button>
              <br></br>
             

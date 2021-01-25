@@ -32,12 +32,12 @@ const previous = () => {
             <React.Fragment>
                 {/* <Swiper id="main"> */}
                     <button class="buttonPages" onClick={redirectCourse}> 
-                    <p class="button-inside">SING</p></button>
+                    <p class="button-inside"><h1 class='h2'>SING</h1></p></button>
                     <br></br>
                     <button class="button-nav" onClick={previous}>BACK</button>
                     <button class="button-nav" onClick={next}>NEXT</button>
                     <button class="buttonPages" onClick={redirectStudio}>
-                    <p class="button-inside">STUDIO</p>
+                    <p class="button-inside"><h1 class='h2'>STUDIO</h1></p>
                     </button>
                     <br></br>
             </React.Fragment>
@@ -45,6 +45,5 @@ const previous = () => {
         </>
     );
 }
-
 
 export default Home

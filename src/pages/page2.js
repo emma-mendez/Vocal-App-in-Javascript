@@ -24,13 +24,14 @@ const Page2 = () =>{
             <img src='acslogo.png' className="logo" alt="logo" />
             </header>
             <button class="buttonPages" onClick={redirect}> 
-            <p class="button-inside">CON4DZ</p>
+            <p class="button-inside" > <h1 class='h2'>CON4DZ</h1>
+</p>
             </button>
             <br></br>
             <button class="button-nav" onClick={previous}>BACK</button>
             <button class="button-nav" onClick={next}>NEXT</button>
             <button class="buttonPages" onClick={redirectJ}>
-            <p class="button-inside">JOURNAL</p>
+            <p class="button-inside"><h1 class='h2'>JOURNAL</h1></p>
             </button>
             <br></br>
             
