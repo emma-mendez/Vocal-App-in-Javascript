@@ -248,7 +248,9 @@ body {
   margin-left: 5px;
 }
 
-
+.span {
+  padding-right: 15px;
+}
 .p {
     margin-left: 29px;
 }
@@ -307,15 +309,16 @@ body {
 
 
 .note {
-  border-color: pink;
+  color: black;
   padding-left: 20px;
   padding-top: 27px;
   margin-top: 25px;
-  padding-bottom: 120px;
+  margin-left: 25px;
+  padding-bottom: 10px;
   padding-right: 290px;
   margin-left: 25px;
   border-radius: 29px;
-border-width: 5px;
+  border-width: 5px;
 }
   
 
