@@ -95,12 +95,13 @@ function Journal() {
             ))}          
                     </p></div>
    
-            </table>
+            </table>~
             <br></br>
             </table>
             <div>
             <p class="note"></p>
             </div>
+            <br></br>
             <button class= "buttonJ" >Download</button>
       </div> 
       </div> 
