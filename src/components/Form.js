@@ -1,4 +1,4 @@
-import React, { useState, Redirect  } from 'react';
+import React, { useState  } from 'react';
 import { useForm} from "react-hook-form";
 import { BrowserRouter as Router, Switch, Route, Link, Prompt} from "react-router-dom";
 
@@ -11,32 +11,6 @@ function Form({ handleClose }) {
   const [inputUserPassword, setUserPassword] = useState("");
   let [isBlocking, setIsBlocking] = useState(false);
   
-  //   const onSubmit = async () => {
-  //     const response = await fetch('http://localhost:1000/signup', {
-  //       method: 'POST',
-  //       headers: {
-  //         'Accept' : 'application/json',
-  //         'Content-Type' : 'application/json'
-  //       },
-  //       body: JSON.stringify({
-  //         userName: inputUserName,
-  //         password: inputUserPassword
-  //       })
-  //     })
-  //     const json = await response()
-  //     state = { redirect: null };
-  //     render() 
-  // if (this.state.redirect) {
-  //   return <Redirect to={this.state.redirect} />
-  // }
-  //     window.alert(json.message)
-  //     console.log(inputUserName)
-  //     console.log(inputUserPassword)
-
-  //   console.log("Good to GO Emma!")
-  //   handleClose()
-  //   }
-
 
   const onSubmit = async () => {
     const response = await fetch('http://localhost:1000/signup', {

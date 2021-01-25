@@ -1,20 +1,18 @@
 import React, { useState } from 'react';
 import {useForm} from "react-hook-form";
+// import { BrowserRouter as Router, Switch, Route, Link, Prompt} from "react-router-dom";
 
 
 function RegistrationForm({ handleClose }) {
     
-
-  let [isBlocking, setIsBlocking] = useState(false);
-
     const {register, handleSubmit} = useForm();
     const [inputChooseName, setChooseName] = useState("");
     const [inputFirstName, setFirstName] = useState("");
     const [inputLastName, setLastName] = useState("");
     const [inputUserPassword, setUserPassword] = useState("");
       
-      const onSubmit = async () => {
-        const response = await fetch('http://localhost:1000/registration', {
+      const onSubmit = async () => { 
+        const response = await fetch('http://localhost:1000/signup', {
           method: 'POST',
           headers: {
             'Accept' : 'application/json',
@@ -34,7 +32,7 @@ function RegistrationForm({ handleClose }) {
   
       console.log("Good to GO Emma!")
       handleClose()
-      }
+    }
 
 
     return (
@@ -76,17 +74,13 @@ function RegistrationForm({ handleClose }) {
         type="password"
         placeholder="Choose New Password" />
         <br/>
-         <button 
+        <button 
         onSubmit={event => {
           event.preventDefault();
           event.target.reset();
-          setIsBlocking(false);
         }}
         type="submit"
         class="buttonf" 
-        onChange={event => {
-          setIsBlocking(event.target.value.length > 0);
-        }}
         >Submit
       </button>
         </form>

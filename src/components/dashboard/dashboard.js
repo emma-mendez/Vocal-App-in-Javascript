@@ -9,12 +9,16 @@ class Dashboard extends Component {
     this.state = {
       show: false,
       showLogin: false,
+      showRegistration: false,
 
     };
     this.showModal = this.showModal.bind(this);
     this.hideModal = this.hideModal.bind(this);
     this.showModalLogin = this.showModalLogin.bind(this);
     this.hideModalLogin = this.hideModalLogin.bind(this);
+    this.showModalRegistration = this.showModalRegistration.bind(this);
+    this.hideModalRegistration = this.hideModalRegistration.bind(this);
+  
   }
   showModal = () => {
     this.setState({ show: true });
@@ -30,6 +34,14 @@ class Dashboard extends Component {
 
   hideModalLogin = () => {
     this.setState({ showLogin: false });
+  };
+
+  showModalRegistration = () => {
+    this.setState({ showRegistration: true });
+  };
+
+  hideModalRegistration = () => {
+    this.setState({ showRegistration: false });
   };
 
   
@@ -50,15 +62,15 @@ class Dashboard extends Component {
           </button>
               </div>
               <br></br>
-              <div>
-        <Modal show={this.state.show} handleClose={this.hideModal}>
-        <RegistrationForm />
+        <Modal show={this.state.showRegistration}>
+        <RegistrationForm handleClose={this.hideModalRegistration}/>
         </Modal>
+              <div>
               <button 
               class="text-box" 
               type="button" 
               class="button" 
-              onClick={this.showModal}>
+              onClick={this.showModalRegistration}>
               Register
             </button>
             </div>        
