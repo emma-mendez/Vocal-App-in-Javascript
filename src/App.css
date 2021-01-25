@@ -283,37 +283,40 @@ body {
 
 }
 
+
+/* journal */
 .table-responsive{
-  display: center;
+  color: white;
+  display: left;
   padding: 20px;
-  margin-right: 50px;
-  margin-left: 50px;
-  background-color: rgb(245, 242, 238);
+  margin-left: -100%;
+  background-color: black;
   border-radius: 20px;
   box-sizing: 50px;
 }
 
 .table-responsive2{
-  display: center;
+  color: white;
+  display: left;
   padding: 20px;
-  margin-right: 50px;
-  margin-left: 50px;
-  background-color: rgb(245, 242, 238);
+  margin-left: -100%;
+  background-color: black;
   border-radius: 20px;
   box-sizing: 50px;
 }
 
 
 .note {
-  border-block-color: grey;
+  border-color: pink;
   padding-left: 20px;
   padding-top: 27px;
   margin-top: 25px;
-  padding-bottom: 20px;
-  padding-right: 270px;
+  padding-bottom: 120px;
+  padding-right: 290px;
   margin-left: 25px;
   border-radius: 29px;
-border-width: 5px;}
+border-width: 5px;
+}
   
 
 .boarder {

@@ -95,7 +95,7 @@ function Journal() {
             ))}          
                     </p></div>
    
-            </table>~
+            </table>
             <br></br>
             </table>
             <div>
