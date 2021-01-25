@@ -43,8 +43,6 @@ class App extends Component {
         <Dashboard/>
         </>
              )} />
-            </Router>
-                 <Router>
             <Route exact path="/Home" render={() => (
                 <>
            <Home/>
@@ -82,9 +80,8 @@ class App extends Component {
         </>
          )} />
             </Router>
-            
-            </div>
-      </>
+          </div>
+      ~</>
     );
   }
 }
