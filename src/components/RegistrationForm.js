@@ -49,6 +49,7 @@ function RegistrationForm({ handleClose }) {
           placeholder="Choose Username"
           value={inputChooseName}
         /> 
+        <br></br>
         <input 
         onChange={(e) => setFirstName(e.target.value)}
         value={inputFirstName}
@@ -57,6 +58,7 @@ function RegistrationForm({ handleClose }) {
         name="firstname"
         placeholder="First Name"
         value={inputFirstName}/>
+        <br></br>
         <input 
         onChange={(e) => setLastName(e.target.value)}
         value={inputLastName}
@@ -65,6 +67,7 @@ function RegistrationForm({ handleClose }) {
         name="lastname"
         placeholder="Last Name"
         value={inputLastName}/>
+        <br></br>
         <input 
         onChange={(e) => setUserPassword(e.target.value)}
         value={inputUserPassword}
@@ -74,6 +77,7 @@ function RegistrationForm({ handleClose }) {
         type="password"
         placeholder="Choose New Password" />
         <br/>
+        <br></br>
         <button 
         onSubmit={event => {
           event.preventDefault();
