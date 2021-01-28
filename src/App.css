@@ -218,8 +218,7 @@ body {
     padding-left: 65px;
     margin-left: -20px; 
     border: transparent;
-    top: -13px;
-    left: -15px
+    top: -13px
 }
 
 .button-inside:after {
@@ -251,7 +250,7 @@ body {
 }
 
 .h2 {
-  margin-left: -10px;
+  margin-left: 0px;
 }
 
 .span {

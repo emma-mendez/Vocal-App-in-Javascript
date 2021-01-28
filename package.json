@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/styles": "^4.11.2",
     "@popmotion/easing": "^1.0.2",
     "@swiper/core": "^0.0.21",
     "@tensorflow-models/face-landmarks-detection": "^0.0.2",

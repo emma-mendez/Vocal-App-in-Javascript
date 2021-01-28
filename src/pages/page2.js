@@ -7,7 +7,7 @@ const Page2 = () =>{
     let history = useHistory();
 
     const redirect = () => {
-    history.push('/con4dz')};
+    history.push('/con4dnz')};
 
     const redirectJ = () => {
     history.push('/journal')}
@@ -24,7 +24,7 @@ const Page2 = () =>{
             <img src='acslogo.png' className="logo" alt="logo" />
             </header>
             <button class="buttonPages" onClick={redirect}> 
-            <p class="button-inside" > <h1 class='h2'>CON4DZ</h1>
+            <p class="button-inside" > <h1 class='h2'>CON4DNZ</h1>
 </p>
             </button>
             <br></br>

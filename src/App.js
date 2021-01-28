@@ -12,7 +12,9 @@ import Page3 from './pages/page3';
 import Journal from './pages/journal';
 import FaceRecognition from './components/FaceRecognition';
 import { UserForm } from './components/course/UserForm'
-import StudioMenu from './pages/studio-menu'
+import StudioMenu from './pages/studio-menu';
+import SquishyButton from './components/Con4dnz';
+
 
 
 const GlobalStyles = createGlobalStyle`
@@ -84,9 +86,14 @@ class App extends Component {
       <StudioMenu />
       </>
        )} />
+       <Route exact path="/con4dnz" render={() => (
+          <>
+      <SquishyButton />
+      </>
+       )} />
             </Router>
           </div>
-      ~</>
+      </>
     );
   }
 }
