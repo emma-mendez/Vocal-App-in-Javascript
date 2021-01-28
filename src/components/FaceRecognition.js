@@ -94,7 +94,7 @@ return (
     </header>
     <button 
     class="buttonf"
-    onClick={redirect}>Redirect</button>
+    onClick={redirect}>Back</button>
   </div>
   <div>
   </div>
