@@ -13,7 +13,7 @@ import Journal from './pages/journal';
 import FaceRecognition from './components/FaceRecognition';
 import { UserForm } from './components/course/UserForm'
 import StudioMenu from './pages/studio-menu';
-import SquishyButton from './components/Con4dnz';
+import SquishyButton from './components/con4dnz/Con4dnz';
 
 
 
