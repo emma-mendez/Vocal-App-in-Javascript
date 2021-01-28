@@ -4,11 +4,11 @@ import * as facemesh from "@tensorflow-models/face-landmarks-detection";
 import Webcam from "react-webcam";
 import { drawMesh } from "../utilities";
 import {Button} from "react-bootstrap";
-// import { useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 function FaceRecognition () {
   
-  // let history = useHistory();
+  let history = useHistory();
 
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
@@ -53,9 +53,9 @@ requestAnimationFrame(()=>{drawMesh(face, ctx)});
 
 useEffect(()=>{runFacemesh()}, []);
 
-// const redirect = () => {
-//   history.push('/Home');
-// }
+const redirect = () => {
+  history.push('/Home');
+}
 
 
 return (
@@ -92,9 +92,11 @@ return (
         }}
       />
     </header>
+    <button 
+    class="buttonf"
+    onClick={redirect}>Redirect</button>
   </div>
   <div>
-  {/* <button onClick={redirect}>Redirect</button> */}
   </div>
   </>
 );

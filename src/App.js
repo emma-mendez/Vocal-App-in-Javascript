@@ -34,6 +34,10 @@ body {
 `;
 
 class App extends Component {
+  state = {
+    isLog: false
+  };
+  
   render() {
     return (
       <>

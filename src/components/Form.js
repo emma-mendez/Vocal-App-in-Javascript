@@ -4,7 +4,6 @@ import { useForm } from "react-hook-form";
 import { BrowserRouter as Router, Switch, Route, Link, Prompt} from "react-router-dom";
 
 
-
 function Form() {
 
   const {register, handleSubmit} = useForm();
