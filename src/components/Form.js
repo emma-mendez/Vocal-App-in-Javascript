@@ -12,7 +12,8 @@ function Form() {
   let history = useHistory();
   
   const redirect = () => {
-    history.push('/Home')}
+    history.push('/Home')
+  }
 
   const onSubmit = async () => {
     const response = await fetch('http://localhost:1000/login', {
@@ -30,9 +31,17 @@ function Form() {
     window.alert(json.message)
     console.log(inputUserName)
     console.log(inputUserPassword)
-
+  
   console.log("Good to GO Emma!")
-  redirect()  
+
+  
+  if (json.message === 'user exists!') {
+  redirect()
+  } else {
+     window.alert ( "No User Identified. Please Register or retry with new details.")
+    
+    }
+  
   }
     
     return ( 
@@ -68,5 +77,5 @@ function Form() {
       </div>
     );
   }
-  
+
     export default Form;
