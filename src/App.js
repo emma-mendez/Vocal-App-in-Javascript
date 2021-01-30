@@ -95,11 +95,11 @@ class App extends Component {
       <SquishyButton />
       </>
        )} />
-        {/* <Route exact path="/con4dnz" render={() => (
+        <Route exact path="/studio-four" render={() => (
           <>
-      <AudioWaves />
+      {/* <AudioWaves /> */}
       </>
-       )} /> */}
+       )} />
             </Router>
           </div>
       </>

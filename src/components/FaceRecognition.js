@@ -45,8 +45,10 @@ const face = await net.estimateFaces({input:video});
 console.log(face);
 
 // canvas drawing
-const ctx = canvasRef.current.getContext("2d");
-requestAnimationFrame(()=>{drawMesh(face, ctx)});
+if (canvasRef.current !== null) {
+  const ctx = canvasRef.current.getContext("2d");
+  requestAnimationFrame(()=>{drawMesh(face, ctx)});
+} 
 }
 };
 
