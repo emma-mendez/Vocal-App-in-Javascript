@@ -4,7 +4,7 @@ import * as facemesh from "@tensorflow-models/face-landmarks-detection";
 import Webcam from "react-webcam";
 import { drawMesh } from "../utilities";
 import {Button} from "react-bootstrap";
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 
 function FaceRecognition () {
   
@@ -32,7 +32,7 @@ const detect = async (net) => {
     const videoWidth = webcamRef.current.video.videoWidth;
     const videoHeight = webcamRef.current.video.videoHeight;
 
-
+   
 //  setting the video width and canvas width
 webcamRef.current.video.width = videoWidth;
 webcamRef.current.video.height = videoHeight;
@@ -57,7 +57,8 @@ const redirect = () => {
   history.push('/Home');
 }
 
-
+console.log(canvasRef)
+console.log(webcamRef)
 return (
   <>
   <div className="App">
@@ -94,7 +95,7 @@ return (
     </header>
     <button 
     class="buttonf"
-    onClick={redirect}>Back</button>
+    > <Link to="/page3">Back</Link> </button>
   </div>
   <div>
   </div>

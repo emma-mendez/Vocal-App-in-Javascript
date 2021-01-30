@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useForm } from "react-hook-form";
-import { BrowserRouter as Router, Switch, Route, Link, Prompt} from "react-router-dom";
 
 
 function Form() {
