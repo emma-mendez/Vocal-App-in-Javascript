@@ -296,7 +296,7 @@ body {
   color: white;
   display: left;
   padding: 20px;
-  margin-left: -100%;
+  padding-left: -100%;
   background-color: black;
   border-radius: 20px;
   box-sizing: 50px;
@@ -306,7 +306,7 @@ body {
   color: white;
   display: left;
   padding: 20px;
-  margin-left: -100%;
+  padding-left: -100%;
   background-color: black;
   border-radius: 20px;
   box-sizing: 50px;
