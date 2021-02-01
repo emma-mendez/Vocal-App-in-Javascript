@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import Dialog from '@material-ui/core/Dialog';
 import AppBar from '@material-ui/core/AppBar';
-// import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
+import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import { spacing } from '@material-ui/system';
+import Box from '@material-ui/core/Box';
+
+
+
+
 
 export class FormUserDetails extends Component {
   continue = e => {
@@ -13,8 +19,13 @@ export class FormUserDetails extends Component {
 
   render() {
     const { values, handleChange } = this.props;
+    const theme = {
+      spacing: 8,
+    }
+    
     return (
-      // <MuiThemeProvider>
+
+      <MuiThemeProvider>
         <>
           <Dialog
             open
@@ -22,6 +33,7 @@ export class FormUserDetails extends Component {
             maxWidth='sm'
           >
             <AppBar title="Enter User Details" />
+            <Box p={5} bgcolor="background.paper">
             <TextField
               placeholder="Enter Your First Name"
               label="First Name"
@@ -75,6 +87,8 @@ export class FormUserDetails extends Component {
               margin="normal"
               fullWidth
             />
+              </Box>
+
             <br />
             <Button
               color="primary"
@@ -83,7 +97,7 @@ export class FormUserDetails extends Component {
             >Continue</Button>
           </Dialog>
         </>
-      // </MuiThemeProvider>
+      </MuiThemeProvider>
     );
   }
 }

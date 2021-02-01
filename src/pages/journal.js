@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
+import { saveAs } from 'file-saver';
 
   
 const SpeechRecognition =
@@ -10,11 +11,13 @@ mic.continuous = true
 mic.interimResults = true
 mic.lang = 'en-US'
 
+
 function Journal() {
     const [isListening, setIsListening] = useState(false)
     const [note, setNote] = useState(null)
     const [savedNotes, setSavedNotes] = useState([])
-  
+   
+
     useEffect(() => {
       handleListen()
     }, [isListening])
@@ -53,6 +56,17 @@ function Journal() {
       setSavedNotes([...savedNotes, note])
       setNote('')
     }
+
+      const saveFile = () => {
+      FileSaver.saveAs(
+        process.env.PUBLIC_URL + savedNotes.map + "/resource/file.anyType",
+        "NameFile.anyType");
+        var FileSaver = require('file-saver');
+        var blob = new Blob([""], {type: "text/plain;charset=utf-8"});
+        FileSaver.saveAs(blob);
+    }
+
+ 
   
     return (
       <>
@@ -102,7 +116,7 @@ function Journal() {
             <p class="note"></p>
             </div>
             <br></br>
-            <button class= "buttonJ" >Download</button>
+            <button class= "buttonJ" onClick={saveFile}>Download</button>
       </div> 
       </div> 
       </>

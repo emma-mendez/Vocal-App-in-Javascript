@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage":".",
+  "homepage": ".",
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.9.1",
@@ -17,8 +17,10 @@
     "@testing-library/user-event": "^12.6.0",
     "bootstrap": "^3.4.1",
     "easing": "^1.2.1",
+    "file-saver": "^2.0.5",
     "font-picker-react": "^3.5.2",
     "inline-worker": "^1.1.0",
+    "js-file-download": "^0.4.12",
     "node-sass": "^5.0.0",
     "p5": "^0.7.3",
     "popmotion": "^8.4.1",
@@ -65,6 +67,7 @@
     ]
   },
   "devDependencies": {
+    "@types/file-saver": "^2.0.1",
     "inline-worker": "^1.1.0",
     "lodash": "^4.17.11",
     "snapsvg": "^0.5.1",
