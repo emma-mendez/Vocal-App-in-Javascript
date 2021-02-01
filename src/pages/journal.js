@@ -64,7 +64,7 @@ function Journal() {
       <table>
             <h2 class="h2">Current Note</h2>
             <div class="p">
-            { isListening ? <span class="span" ><h1>🛑</h1></span> : <span><h1>🎙️</h1> <h1>🛑</h1></span>}
+            { isListening ? <span class="span" ><h1>🛑 Recording</h1></span> : <span><h1>🎙️</h1> <h1>🛑</h1></span>}
             {/* <br></br> */}
             <button class="buttonJ" 
             onClick={() => setIsListening(prevState => !prevState)}>
