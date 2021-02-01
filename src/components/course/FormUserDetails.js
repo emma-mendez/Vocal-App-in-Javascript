@@ -4,7 +4,6 @@ import AppBar from '@material-ui/core/AppBar';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-import { spacing } from '@material-ui/system';
 import Box from '@material-ui/core/Box';
 
 
@@ -19,9 +18,7 @@ export class FormUserDetails extends Component {
 
   render() {
     const { values, handleChange } = this.props;
-    const theme = {
-      spacing: 8,
-    }
+    
     
     return (
 

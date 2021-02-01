@@ -59,18 +59,33 @@ export class FormPersonalDetails extends Component {
               fullWidth
             />
             <br />
+            <br />
 
+            <div style={{ width: '100%' }}>
+            <Box component="div" 
+            display="inline" 
+            p={1} 
+            m={1} 
+            bgcolor="background.paper">
             <Button
               color="secondary"
               variant="contained"
               onClick={this.back}
             >Back</Button>
-
+            </Box>
+            <Box 
+            component="div" 
+            display="inline" 
+            p={1} 
+            m={1} 
+            bgcolor="background.paper">
             <Button
               color="primary"
               variant="contained"
               onClick={this.continue}
             >Continue</Button>
+            </Box>
+            </div>
             </Box>
           </Dialog>
         </>

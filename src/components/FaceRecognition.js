@@ -96,8 +96,8 @@ return (
       />
     </header>
     <button 
-    class="buttonf"
-    > <Link to="/page3">Back</Link> </button>
+    class="buttonf"> 
+    <Link to="/page3">Back</Link> </button>
   </div>
   <div>
   </div>

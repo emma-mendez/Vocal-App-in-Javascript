@@ -36,6 +36,14 @@ export class UserForm extends Component {
     });
   };
 
+  // Return Home
+  // home = () => {
+  //   const { step } = this.state;
+  //   this.setState({
+  //     action='/Home'
+  //   });
+  // };
+
   // Handle fields change
   handleChange = input => e => {
     this.setState({ [input]: e.target.value });
