@@ -88,13 +88,14 @@ export class FormUserDetails extends Component {
               fullWidth
             />
               </Box>
-
             <br />
+            <Box p={5} bgcolor="background.paper">
             <Button
               color="primary"
               variant="contained"
               onClick={this.continue}
             >Continue</Button>
+            </Box>
           </Dialog>
         </>
       </MuiThemeProvider>

@@ -4,6 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import Box from '@material-ui/core/Box';
 
 export class FormPersonalDetails extends Component {
   continue = e => {
@@ -27,6 +28,7 @@ export class FormPersonalDetails extends Component {
             maxWidth='sm'
           >
             <AppBar title="Enter Personal Details" />
+            <Box p={5} bgcolor="background.paper">
             <TextField
               placeholder="Enter Your Country"
               label="Country"
@@ -69,6 +71,7 @@ export class FormPersonalDetails extends Component {
               variant="contained"
               onClick={this.continue}
             >Continue</Button>
+            </Box>
           </Dialog>
         </>
       </MuiThemeProvider>
