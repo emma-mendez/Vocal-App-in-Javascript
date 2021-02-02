@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../App.css';
 import { saveAs } from 'file-saver';
+import Box from '@material-ui/core/Box';
 
   
 const SpeechRecognition =
@@ -88,11 +89,18 @@ function Journal() {
             Save 
             </button>
             </div>
+             <Box 
+            component="div" 
+            display="inline" 
+            p={1} 
+            m={1} 
+            bgcolor="background.paper">
             <table class="boarder"> 
             <div>
             <p class="note">{note}</p>
             </div>
             </table>
+            </Box>
             </table>
             </div>
           </div>

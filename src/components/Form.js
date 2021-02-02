@@ -35,11 +35,11 @@ function Form() {
   console.log("Good to GO Emma!")
 
   
-  if (json.message === 'user does NOT exist!') {
-    window.alert( "No User Identified. Please Register or retry with new details.")
+  if (json.message === 'user exists!') {
+    window.alert( "Welcome To ACS Vocal App. Accessing Servers ..." )
+    redirect()
   } else {
-     window.alert ("Welcome To ACS Vocal App. Accessing Servers ...") 
-     redirect()
+     window.alert ("No User Identified. Please Register or retry with new details.") 
     }  
   }
     

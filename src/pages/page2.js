@@ -24,8 +24,7 @@ const Page2 = () =>{
             <img src='acslogo.png' className="logo" alt="logo" />
             </header>
             <button class="buttonPages" onClick={redirect}> 
-            <p class="button-inside" > <h1 class='h2'>CON4DNZ</h1>
-</p>
+            <p class="button-inside" ><h1 class='h2'>CON4DNZ</h1></p>
             </button>
             <br></br>
             <button class="button-nav" onClick={previous}>BACK</button>

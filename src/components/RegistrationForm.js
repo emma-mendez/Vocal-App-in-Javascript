@@ -6,7 +6,7 @@ import {useForm} from "react-hook-form";
 function RegistrationForm({ handleClose }) {
     
     const {register, handleSubmit} = useForm();
-    const [inputChooseName, setChooseName] = useState("");
+    const [inputUserName, setUserName] = useState("");
     const [inputFirstName, setFirstName] = useState("");
     const [inputLastName, setLastName] = useState("");
     const [inputUserPassword, setUserPassword] = useState("");
@@ -19,9 +19,9 @@ function RegistrationForm({ handleClose }) {
             'Content-Type' : 'application/json'
           },
           body: JSON.stringify({
-            chooseUsername: inputChooseName,
-            FirstName: inputFirstName,
-            LastName: inputLastName,
+            userName: inputUserName,
+            firstName: inputFirstName,
+            lastName: inputLastName,
             password: inputUserPassword
           })
         })
@@ -41,13 +41,13 @@ function RegistrationForm({ handleClose }) {
           <form action="\home" onSubmit={handleSubmit(onSubmit)}>
 
         <input
-        onChange={(e) => setChooseName(e.target.value)}
-        value={inputChooseName}
+        onChange={(e) => setUserName(e.target.value)}
+        value={inputUserName}
         class="form"
         ref={register}
           name="username"
           placeholder="Choose Username"
-          value={inputChooseName}
+          value={inputUserName}
         /> 
         <br></br>
         <input 
