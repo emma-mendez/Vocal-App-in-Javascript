@@ -6,7 +6,7 @@ import CassetteTape from "./components/CassetteTape";
 import { createGlobalStyle } from "styled-components";
 import styledNormalize from "styled-normalize";
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Home from './pages/home.js'
+import Home from './pages/Home.js'
 import Page2 from './pages/page2';
 import Page3 from './pages/page3';
 import Journal from './pages/journal';
