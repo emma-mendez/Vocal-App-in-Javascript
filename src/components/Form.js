@@ -16,7 +16,7 @@ function Form() {
   }
 
   const onSubmit = async () => {
-    const response = await fetch('http://localhost:1000/login', {
+    const response = await fetch('https://fierce-peak-48968.herokuapp.com/login', {
       method: 'POST',
       headers: {
         'Accept' : 'application/json',

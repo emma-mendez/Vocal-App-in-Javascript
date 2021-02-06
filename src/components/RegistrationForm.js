@@ -12,7 +12,7 @@ function RegistrationForm({ handleClose }) {
     const [inputUserPassword, setUserPassword] = useState("");
       
       const onSubmit = async () => { 
-        const response = await fetch('http://localhost:1000/signup', {
+        const response = await fetch('https://fierce-peak-48968.herokuapp.com/signup', {
           method: 'POST',
           headers: {
             'Accept' : 'application/json',
