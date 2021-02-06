@@ -54,7 +54,6 @@ class Dashboard extends Component {
           </Modal>
           <div>  
           <button 
-          class="text-box" 
           type="button" 
           class="button"
           onClick={this.showModalLogin}>
@@ -67,7 +66,6 @@ class Dashboard extends Component {
         </Modal>
               <div>
               <button 
-              class="text-box" 
               type="button" 
               class="button" 
               onClick={this.showModalRegistration}>

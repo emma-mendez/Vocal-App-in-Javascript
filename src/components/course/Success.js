@@ -4,7 +4,6 @@ import AppBar from '@material-ui/core/AppBar';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 import Button from '@material-ui/core/Button';
-import { useHistory } from 'react-router-dom';
 
 export class Success extends Component {
   continue = e => {

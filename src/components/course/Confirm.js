@@ -5,8 +5,6 @@ import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import { List, ListItem, ListItemText } from '@material-ui/core/';
 import Button from '@material-ui/core/Button';
 import Box from '@material-ui/core/Box';
-import { positions } from '@material-ui/system';
-import { spacing } from '@material-ui/system';
 
 export class Confirm extends Component {
   continue = e => {
@@ -24,7 +22,6 @@ export class Confirm extends Component {
     const {
       values: { firstName, 
         lastName, 
-        country, 
         contactNumber, 
         email,
         socialFB,

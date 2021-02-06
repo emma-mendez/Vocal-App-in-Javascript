@@ -1,14 +1,14 @@
 import React, { useRef, useEffect } from "react";
+// eslint-disable-next-line
 import * as tf from "@tensorflow/tfjs";
 import * as facemesh from "@tensorflow-models/face-landmarks-detection";
 import Webcam from "react-webcam";
 import { drawMesh } from "../utilities";
-import {Button} from "react-bootstrap";
-import { useHistory, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function FaceRecognition () {
   
-  let history = useHistory();
+  // let history = useHistory();
 
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
@@ -53,11 +53,7 @@ if (canvasRef.current !== null) {
 };
 
 
-useEffect(()=>{runFacemesh()}, []);
-
-const redirect = () => {
-  history.push('/Home');
-}
+useEffect(()=>{runFacemesh()});
 
 console.log(canvasRef)
 console.log(webcamRef)

@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import {Button} from "react-bootstrap";
 import 'swiper/swiper-bundle.css';
 import { useHistory } from 'react-router-dom';
 

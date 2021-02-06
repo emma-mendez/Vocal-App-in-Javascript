@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from "react-dom";
-import Modal from "../con4dnz/Con4dnz"
 
 
 class Con4dnz extends React.Component {

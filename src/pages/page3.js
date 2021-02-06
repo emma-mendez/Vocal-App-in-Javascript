@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import {Button} from "react-bootstrap";
 import { useHistory } from 'react-router-dom';
 
 const Page3 = () =>{

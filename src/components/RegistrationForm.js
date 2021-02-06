@@ -47,7 +47,6 @@ function RegistrationForm({ handleClose }) {
         ref={register}
           name="username"
           placeholder="Choose Username"
-          value={inputUserName}
         /> 
         <br></br>
         <input 
@@ -57,7 +56,7 @@ function RegistrationForm({ handleClose }) {
         ref={register}
         name="firstname"
         placeholder="First Name"
-        value={inputFirstName}/>
+        />
         <br></br>
         <input 
         onChange={(e) => setLastName(e.target.value)}
@@ -66,7 +65,7 @@ function RegistrationForm({ handleClose }) {
         ref={register}
         name="lastname"
         placeholder="Last Name"
-        value={inputLastName}/>
+        />
         <br></br>
         <input 
         onChange={(e) => setUserPassword(e.target.value)}
