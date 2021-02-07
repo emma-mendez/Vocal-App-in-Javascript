@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import UploadService from "../services/upload-files.service";
-// import '../styles.css';
 
 
-const Tanya = () => {
+const FourTrackStudioRecorder = () => {
     const [
       progress, setProgress
     ] = useState( 0 );
@@ -25,10 +24,10 @@ const Tanya = () => {
     ] = useState( [] );
 
     function upload() {
-      let audioFile = selectedFiles[0];
-      setCurrentFile ( audioFile );
+      let wav = selectedFiles[0];
+      setCurrentFile ( wav );
   
-      UploadService.upload(audioFile, (event) => {
+      UploadService.upload(wav, (event) => {
           setProgress(Math.round((100 * event.loaded) / event.total));
       })
           .then((response) => {
@@ -43,7 +42,7 @@ const Tanya = () => {
         .catch(() => {
             setProgress (0);
             setMessage ("Could not upload the file!");
-            setCurrentFile (undefined);
+            setCurrentFile (wav);
           })
   
         setSelectedFiles (undefined);
@@ -59,10 +58,10 @@ function selectFile (e) {
         <div>
             
     <div id="waveform-container">
-      <canvas class="track-container" id="canvas" width="1000" height="50"></canvas>
-      <canvas class="track-container2" id="canvas2" width="1000" height="50"></canvas>
-      <canvas class="track-container3" id="canvas3" width="1000" height="50"></canvas>
-      <canvas class="track-container4" id="canvas4" width="1000" height="50"></canvas>
+      <canvas setFileInfos="true" class="track-container" id="canvas" width="1000" height="100"></canvas>
+      <canvas class="track-container2" id="canvas2" width="1000" height="100"></canvas>
+      <canvas class="track-container3" id="canvas3" width="1000" height="100"></canvas>
+      <canvas class="track-container4" id="canvas4" width="1000" height="100"></canvas>
     </div>
           <div className="row">
             <div className="col-8">
@@ -113,9 +112,9 @@ function selectFile (e) {
             <div className="card-header">List of Files</div>
             <ul className="list-group list-group-flush">
               {fileInfos &&
-                fileInfos.map((img, index) => (
+                fileInfos.map((wav, index) => (
                   <li className="list-group-item" key={index}>
-                    <a href={img.url}>{img.name}</a>
+                    <a href={wav.url}>{wav.name}</a>
                   </li>
                 ))}
             </ul>
@@ -125,4 +124,4 @@ function selectFile (e) {
     }
   
 
-  export default Tanya
+  export default FourTrackStudioRecorder

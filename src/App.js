@@ -16,7 +16,7 @@ import StudioMenu from './pages/studio-menu';
 import SquishyButton from './components/con4dnz/Con4dnz';
 import "bootstrap/dist/css/bootstrap.min.css";
 // import FourTrack from './components/FourTrackStudio/fourTrack'
-import Tanya from './components/upload-files.component'
+import FourTrackStudioRecorder from './components/upload-files.component'
 const GlobalStyles = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
 ${styledNormalize};
@@ -97,7 +97,7 @@ class App extends Component {
        )} />
         <Route exact path="/studio-four" render={() => (
           <>
-      <Tanya />
+      <FourTrackStudioRecorder />
       </>
        )} />
             </Router>
