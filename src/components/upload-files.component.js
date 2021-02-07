@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import UploadService from "../services/upload-files.service";
+// import '../styles.css';
 
 
 const Tanya = () => {
@@ -56,6 +57,13 @@ function selectFile (e) {
 
       return (
         <div>
+            
+    <div id="waveform-container">
+      <canvas class="track-container" id="canvas" width="1000" height="50"></canvas>
+      <canvas class="track-container2" id="canvas2" width="1000" height="50"></canvas>
+      <canvas class="track-container3" id="canvas3" width="1000" height="50"></canvas>
+      <canvas class="track-container4" id="canvas4" width="1000" height="50"></canvas>
+    </div>
           <div className="row">
             <div className="col-8">
               <label className="btn btn-default p-0">
