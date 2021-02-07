@@ -432,16 +432,20 @@ display: flex;
 align-items: center;
 }
 .track-container {
-background-color: blue
+border: solid;
+border-color: blue
 }
 .track-container2 {
-background-color: pink
+  border: solid;
+  border-color: pink
 }
 .track-container3 {
-background-color: yellow
+  border: solid;
+  border-color: yellow
 }
 .track-container4 {
-background-color: green
+  border: solid;
+  border-color: green
 }
 #demo-controls button {
 background: #fff;
