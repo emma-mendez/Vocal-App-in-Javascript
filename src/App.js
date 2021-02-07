@@ -72,7 +72,7 @@ class App extends Component {
             <Route exact path="/studio" render={() => (
                 <>
            <GlobalStyles />
-        <CassetteTape vizColor="blue" />
+        <CassetteTape vizColor="#0247FE" />
             </>
              )} />
              <Route exact path="/game" render={() => (
