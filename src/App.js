@@ -29,7 +29,7 @@ html {
 body {
   font-family: 'Source Sans Pro', 'sans-serif';
   font-weight: 400;
-  background: #19ca90;
+  background: white;
 }
 `;
 
