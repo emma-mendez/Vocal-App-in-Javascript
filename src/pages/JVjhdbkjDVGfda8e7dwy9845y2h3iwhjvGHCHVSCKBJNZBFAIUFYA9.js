@@ -6,16 +6,16 @@ const Page2 = () =>{
     let history = useHistory();
 
     const redirect = () => {
-    history.push('/con4dnz')};
+    history.push('/ADjksbda8hlk;l/.,l;l/;UHJBVGFAgi7swd8')};
 
     const redirectJ = () => {
-    history.push('/journal')}
+    history.push('/kjbuy^TTgyugvhcfYTGHJVGHCFTUyiu8978t6tyugvhcfvhgjyuft')}
 
     const previous = () => {
-    history.push('/Home')};
+    history.push('/AKJBDABDKJbjbkjbndbfiuesfy783463945783648234iyurwhffbjdvcaca~DSErq6t87ywiau')};
 
     const next = () => {
-    history.push('/page3')}
+    history.push('/7Ygihbjnkbdafhisyf78re7t94ythiy5eht5io4y875erfygaikhbjadvchbdsvkdflmblgflg;knbjdhfgfiruv')}
 
     return (
         <div>

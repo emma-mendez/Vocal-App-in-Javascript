@@ -5,13 +5,13 @@ import { useHistory } from 'react-router-dom';
 const StudioMenu = () =>{
     let history = useHistory();
     const redirect = () => {
-    history.push('/studio')};
+    history.push('/ruigdfhjdsfbkjhIYUFYRDTXcyuyg78t67tugvhcfyt6t875dtuygjvghuyg')};
 
     const redirectFour = () => {
-    history.push('/studio-four')}
+    history.push('/HVSYTG87yhuijbhGBHSVFT*76ftyuygiuhILJKM.L,;OKIHUGYUT6756E4ryftgvhb')}
 
     const redirectBack = () => {
-        history.push('/page2')}
+        history.push('/JVjhdbkjDVGfda8e7dwy9845y2h3iwhjvGHCHVSCKBJNZBFAIUFYA9')}
 
     return (
         <div>

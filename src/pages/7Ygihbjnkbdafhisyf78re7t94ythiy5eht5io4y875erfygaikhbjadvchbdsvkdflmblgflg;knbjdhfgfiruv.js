@@ -6,7 +6,7 @@ const Page3 = () =>{
     let history = useHistory();
 
     const redirect = () => {
-        history.push('/game');
+        history.push('/dsjkfgrsuyfygesuydctdxc67tfyfVGHJCFXDTF78t67tuygjhbvghTFYFUYGuhv');
 }
 
     const redirectStats = () => {
@@ -14,10 +14,10 @@ const Page3 = () =>{
     
 }
         const previous = () => {
-        history.push('/page2')}
+        history.push('/JVjhdbkjDVGfda8e7dwy9845y2h3iwhjvGHCHVSCKBJNZBFAIUFYA9')}
     
         const next = () => {
-        history.push('/Home')};
+        history.push('/AKJBDABDKJbjbkjbndbfiuesfy783463945783648234iyurwhffbjdvcaca~DSErq6t87ywiau')};
     
         
 

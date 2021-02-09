@@ -7,11 +7,11 @@ const Home = () =>{
     let history = useHistory();
 
     const redirectCourse = () => {
-        history.push('/course');
+        history.push('/JVJHBKJHIbvgjbjkugyTYGHV786ftuvgjkui876FTYGHvcfdryTYGHOJPllkjh');
 }
 
     const redirectStudio = () => {
-    history.push('/studio-menu')
+    history.push('/GCVJHIUH7y8tygujghbkVGTF67TGYHbkhjgvcukjlmkljhjklnj,.kjuygu')
     
 }
 
@@ -19,7 +19,7 @@ const previous = () => {
     history.push('/')};
 
     const next = () => {
-    history.push('/page2')}
+    history.push('/JVjhdbkjDVGfda8e7dwy9845y2h3iwhjvGHCHVSCKBJNZBFAIUFYA9')}
 
     
     return (

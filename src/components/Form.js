@@ -12,7 +12,7 @@ function Form() {
   let history = useHistory();
   
   const redirect = () => {
-    history.push('/Home')
+    history.push('/AKJBDABDKJbjbkjbndbfiuesfy783463945783648234iyurwhffbjdvcaca~DSErq6t87ywiau')
   }
 
   const onSubmit = async () => {
