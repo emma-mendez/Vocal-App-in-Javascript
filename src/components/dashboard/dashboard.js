@@ -44,9 +44,9 @@ class Dashboard extends Component {
     this.setState({ showRegistration: false });
   };
 
-  
 
     render() {
+
         return (   
           <> 
           <Modal show={this.state.showLogin}>
