@@ -14,6 +14,7 @@ const StudioMenu = () =>{
         history.push('/JVjhdbkjDVGfda8e7dwy9845y2h3iwhjvGHCHVSCKBJNZBFAIUFYA9')}
 
     return (
+        <div class="content">
         <div>
             <header className="App-header">
             <img src='acslogo.png' className="logo" alt="logo" />
@@ -26,7 +27,7 @@ const StudioMenu = () =>{
             </button>
             <br></br>
             <button class="button-nav" onClick={redirectBack}> BACK</button>
-
+            </div>
         </div>
     )
 }

@@ -18,23 +18,28 @@ const Page2 = () =>{
     history.push('/7Ygihbjnkbdafhisyf78re7t94ythiy5eht5io4y875erfygaikhbjadvchbdsvkdflmblgflg;knbjdhfgfiruv')}
 
     return (
+        <>
+        <div class="content">
         <div>
             <header className="App-header">
             <img src='acslogo.png' className="logo" alt="logo" />
             </header>
+        <>
             <button class="buttonPages" onClick={redirect}> 
             <p class="button-inside" ><h1 class='h2'>CON4DNZ</h1></p>
             </button>
             <br></br>
             <button class="button-nav" onClick={previous}>BACK</button>
             <button class="button-nav" onClick={next}>NEXT</button>
+            <br></br>
             <button class="buttonPages" onClick={redirectJ}>
             <p class="button-inside"><h1 class='h2'>JOURNAL</h1></p>
             </button>
+            </>
             <br></br>
-            
-
+            </div>
         </div>
+        </>
     )
 }
 

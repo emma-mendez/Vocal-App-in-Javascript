@@ -22,6 +22,7 @@ const Page3 = () =>{
         
 
     return (
+        <div class="content">
         <div>
             <header className="App-header">
             <img src='acslogo.png' className="logo" alt="logo" />
@@ -39,8 +40,7 @@ const Page3 = () =>{
             <p class="button-inside"><h1 class='h2'>ZING!</h1></p>
             </button>
              <br></br>
-            
-    
+             </div>
         </div>
     )
 }

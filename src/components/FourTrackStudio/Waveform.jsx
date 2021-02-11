@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react'
-import classes from './Waveform.module.css'
+// import classes from './Waveform.module.css'
 
 import waveformAvgChunker from './waveformAvgChunker'
 import useSetTrackProgress from './useSetTrackProgress'

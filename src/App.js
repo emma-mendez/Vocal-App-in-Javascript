@@ -13,12 +13,14 @@ import Journal from './pages/kjbuy^TTgyugvhcfYTGHJVGHCFTUyiu8978t6tyugvhcfvhgjyu
 import FaceRecognition from './components/FaceRecognition';
 import { UserForm } from './components/course/JVJHBKJHIbvgjbjkugyTYGHV786ftuvgjkui876FTYGHvcfdryTYGHOJPllkjh'
 import StudioMenu from './pages/GCVJHIUH7y8tygujghbkVGTF67TGYHbkhjgvcukjlmkljhjklnj,.kjuygu';
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 // import FourTrack from './components/FourTrackStudio/fourTrack'
 import FourTrackStudioRecorder from './components/HVSYTG87yhuijbhGBHSVFT*76ftyuygiuhILJKM.L,;OKIHUGYUT6756E4ryftgvhb'
 import Con4dnz from './components/con4dnz/ADjksbda8hlk;l/.,l;l/\';UHJBVGFAgi7swd8';
+
+
 const GlobalStyles = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+// @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
 ${styledNormalize};
 html {
   box-sizing: border-box;
@@ -29,7 +31,6 @@ html {
 body {
   font-family: 'Source Sans Pro', 'sans-serif';
   font-weight: 400;
-  background: white;
 }
 `;
 

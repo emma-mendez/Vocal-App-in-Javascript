@@ -11,6 +11,7 @@ export default class ExampleComponent extends Component {
 
 	render() {
 		return (
+			<div class="content">
 			<div>
 				<FontPicker
 					apiKey="YOUR_API_KEY"
@@ -22,6 +23,7 @@ export default class ExampleComponent extends Component {
 					}
 				/>
 				<p className="apply-font">The font will be applied to this text.</p>
+			</div>
 			</div>
 		);
 	}

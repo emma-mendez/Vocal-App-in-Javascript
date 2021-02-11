@@ -1,4 +1,3 @@
-import './modal.css';
 import React from "react";
 
 const Modal = ({ 

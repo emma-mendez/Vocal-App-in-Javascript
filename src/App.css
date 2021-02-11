@@ -1,3 +1,9 @@
+.content {
+  height: 100vh; /* Magic here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .App {
   text-align: center;
 }
@@ -7,24 +13,83 @@
   pointer-events: none;
 }
 
+body {
+  background-color: white;
+  display: center;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-@media (max-width) { }
+/* Extra XXsmall devices (phones, 400px and down) */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color:red;
+  }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color:black;
+  }
+}
 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  body {
+    background-color:purple;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  body {
+    background-color:yellow;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  body {
+    background-color:orange;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: pink;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  
+  .App-header {
+    display: center;
+    min-height: 100vh;
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
+  }
+  .content {
+    height: -100vh; /* Magic here */
+  }
+  .App-logo {
+    height: 10vmin;
+    pointer-events: none;
+  }
+
+}
 
 .App-header {
-  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
 
@@ -45,38 +110,24 @@
   }
 }
 
-/* \swiper */
-.swiper-container {
-  width: 500px;
-}
-
-.swiper-pagination {
-  bottom: 0;
-  padding-bottom: 10px;
-}
-
-.swiper-wrapper {
-  padding-inline-start: 0;
-}
 
 /* buttons */
 .button {
-  display: center;
   border-block-color: grey;
   border-width: 13px;
-  padding: 30px 90px;
-  margin-block: 55px;
+  /* padding: 30px 90px; */
+  /* margin-block: 55px; */
   background-color: orange;
   border-radius: 60px;
 
 }
 
 .buttonJ {
-  display: center;
+  /* display: center; */
   border-block-color: grey;
   border-width: 3px;
   padding: 10px 30px;
-  margin-left: 15px;
+  /* margin-left: 15px; */
   background-color: orange;
   border-radius: 60px;
 
@@ -84,32 +135,34 @@
 
 .buttonPages {
   border-block-color: grey;
-  margin-right: 60px;
+  /* margin-right: 60px; */
   /* border-width: 13px; */
   padding: 150px 150px;
-  margin-block: 50px;
+  /* margin-block: 50px; */
   background-color: orange;
   border-radius: 90px;
   /* display: center; */
   border-width: 20px;
 }
 /* Glow Button */
-body {
-    margin-right: 10px;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
+.glow.body {
+  background-color: blue;
+
+    /* margin-right: 10px; */
+    /* padding: 0; */
+    /* width: 100%; */
+    /* height: 100vh; */
+    /* display: flex; */
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 
 .button-nav {
     display: center;
-    margin-right: 285px;
-    margin-left: 205px;
-    width: 52px;
+    margin-right: 0px;
+    /* margin-left: 0px; */
+    /* width: 52px; */
     height: 50px;
     border: solid;
     outline: none;
@@ -124,14 +177,14 @@ body {
 .button-nav:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: -2px;
-    left:-2px;
+    /* position: absolute; */
+    /* top: -2px; */
+    /* left:-2px; */
     background-size: 400%;
     z-index: -1;
     filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
+    /* width: calc(100% + 4px); */
+    /* height: calc(100% + 4px); */
     animation: glowing 20s linear infinite;
     opacity: 0;
     transition: opacity .3s ease-in-out;
@@ -163,21 +216,21 @@ body {
 }
 /* button-inside */
 
-body {
-    margin-top: 10px;
-    padding-top: 50px;
-    width: 100%;
-    height: 100vh;
-    display: center;
-    flex-direction: row;
+.inside.button.body {
+    /* margin-top: 10px; */
+    /* padding-top: 50px; */
+    /* width: 100%; */
+    /* height: 100vh; */
+    /* display: center; */
+    /* flex-direction: row; */
     justify-content: center;
     align-items: center;
 }
 
 .button-inside {
-    display: center;
+    /* display: center; */
     width: 95px;
-    height: 50px;
+    /* height: 50px; */
     border: none;
     outline: none;
     background: orange;
@@ -190,14 +243,14 @@ body {
 .button-inside:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-    position: absolute;
-    top: 0px;
-    left:-2px;
+    /* position: absolute; */
+    /* top: 0px; */
+    /* left:-2px; */
     background-size: 400%;
-    z-index: -1;
+    /* z-index: -1; */
     filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
+    /* width: calc(100% + 4px); */
+    /* height: calc(100% + 4px); */
     animation: glowing 20s linear infinite;
     opacity: 0;
     transition: opacity .3s ease-in-out;
@@ -213,12 +266,12 @@ body {
 }
 
 .button-inside:hover:before {
-    display: center;
+    /* display: center; */
     opacity: 1;
-    padding-left: 65px;
-    margin-left: -20px; 
+    /* padding-left: 65px; */
+    /* margin-left: -20px;  */
     border: transparent;
-    top: -13px
+    /* top: -13px */
 }
 
 .button-inside:after {
@@ -335,7 +388,7 @@ body {
 
 
 /* Four Track Studio */
-.body {
+.studio.four.body {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -351,7 +404,7 @@ body {
   background-image: linear-gradient(0deg, #4c474c 0%, #141414 100%);
   border-radius: 50px;
 } 
-[data-role="controls"] > button {
+/* [data-role="controls"] > button {
   margin: 50px auto;
   outline: none;
   display: block;
@@ -369,7 +422,7 @@ body {
       0px 0px 0px 30px #fff, 0px 0px 0px 35px #333;
           box-shadow: 0px 5px 5px 2px rgba(0,0,0,0.3) inset, 
       0px 0px 0px 30px #fff, 0px 0px 0px 35px #333;
-}   
+}    */
 [data-role="controls"] > button:hover {
   background-color: #ee7bee;
   background-image: linear-gradient(0deg, #ee7bee 0%, #6fe1f5 100%);
@@ -416,9 +469,7 @@ body {
   background-image: -o-linear-gradient(top, #0093E9 0%, #80D0C7 100%);
   background-image: linear-gradient(180deg, #0093E9 0%, #80D0C7 100%);
 }
-body {
-font-family: 'Helvetica neue', Helvetica, Arial, sans-serif;
-}
+
 
 #titles, #waveform-container {
 margin: 24px auto;
@@ -460,4 +511,71 @@ flex: 0 0 30%;
 #controls {
 flex: 1;
 margin-left: 1em;
+}
+
+
+/* taken from model */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-box {
+  margin-left: 40;
+  margin-bottom: 70;
+}
+
+
+.modal-main {
+  position:fixed;
+  background: white;
+  width: 80%;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.modal.display-block {
+  /* display: block; */
+}
+
+.display-none {
+  display: none;
+} 
+
+
+.label {
+  display: center;
+  padding: 60px 90px 20px 0;
+  display: inline-block;
+
+}
+
+.text-box {
+display: center;
+/* margin-right: center; */
+/* margin-bottom: 10px; */
+width: 50%;
+padding: 10px 10px 20px 40px;
+border: 1.5px solid #ccc;
+border-radius: 4px;
+float: center;
+
+}
+
+.buttonf {
+display: center;
+border-block-color: grey;
+border-width: 3px;
+padding: 10px 50px;
+margin-block: 20px;
+background-color: orange;
+margin-right: 30px;
+border-radius: 30px;
 }

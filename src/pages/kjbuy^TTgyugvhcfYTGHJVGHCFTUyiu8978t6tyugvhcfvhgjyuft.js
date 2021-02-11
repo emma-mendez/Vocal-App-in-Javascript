@@ -64,6 +64,7 @@ function Journal() {
   
     return (
       <>
+      <div class="content">
       <div class="container">
       <div class="row">
       <div class="col-lg-12 col-lg-6 col-lg-8">
@@ -124,6 +125,7 @@ function Journal() {
             >Download</button>
       </div> 
       </div> 
+      </div>
       </>
     )
   }
