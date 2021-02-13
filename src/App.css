@@ -29,7 +29,8 @@
   
  
   .content {
-    height: -100vh; /* Magic here */
+    /* Magic here */
+    height: -100vh; 
   }
   .App-logo {
     height: 10vmin;
@@ -38,15 +39,16 @@
 
 
 .App-header {
-  min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  min-height: 80px;
+  display: center;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 img.resize {
-  width:540px; /* you can use % */
+  /* you can use % */
+  width:540px; 
   height: auto;
 }
 
@@ -1045,6 +1047,18 @@ border-block-color: grey;
 border-width: 3px;
 padding: 10px 50px;
 margin-block: 20px;
+background-color: orange;
+margin-right: 30px;
+border-radius: 30px;
+}
+
+.buttonzing {
+  top: 200px;
+display: center;
+border-block-color: grey;
+border-width: 3px;
+padding: 10px 50px;
+margin-block: 90px;
 background-color: orange;
 margin-right: 30px;
 border-radius: 30px;

@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom';
 
 function FaceRecognition () {
   
-  // let history = useHistory();
 
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
@@ -94,7 +93,7 @@ return (
     <br></br>
     <button 
     class="buttonzing"> 
-    <Link to="/page3">Back</Link> 
+    <Link to="/7Ygihbjnkbdafhisyf78re7t94ythiy5eht5io4y875erfygaikhbjadvchbdsvkdflmblgflg;knbjdhfgfiruv">Back</Link> 
     </button>
   </div>
   <div>
