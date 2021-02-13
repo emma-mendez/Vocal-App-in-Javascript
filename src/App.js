@@ -105,7 +105,7 @@ class App extends Component {
       </>
        )} />
         {/* Confidence */}
-        <Route exact path="/quiz" render={() => (
+        <Route exact path="/quiz-mood" render={() => (
           <>
       <Quiz />
       </>

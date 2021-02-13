@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
 import '../con4dnz/quiz.css';
+
+
+
+
 export default function Quiz() {
 	const questions = [
 		{
 			questionText: 'How are you feeling today?',
 			answerOptions: [
-				{ answerText: 'Senitive', isCorrect: true },
-				{ answerText: 'Mood Swings', isCorrect: true },
-				{ answerText: 'Emotional', isCorrect: true },
+                {id: 1, value: "banana", isChecked: false},
+                {id: 2, value: "apple", isChecked: false},
+                {id: 3, value: "mango", isChecked: false},
+                {id: 4, value: "grap", isChecked: false},
+				{ answerText: 'Senitive', isChecked: true },
+				{ answerText: 'Mood Swings', isCisCheckedorrect: true },
+				{ answerText: 'Emotional', isChecked: true },
                 { answerText: 'Irritable', isCorrect: true },
                 { answerText: 'Worried', isCorrect: true },
                 { answerText: 'Confused', isCorrect: true },
@@ -63,23 +71,52 @@ export default function Quiz() {
 
 
 const [currentQuestion, setCurrentQuestion] = useState(0);
-	return (
+    
+
+const [score, setScore] = useState(false);
+
+
+const [showScore, setShowScore] = useState (false);
+
+const handleAnswerButton = (isCorrect, isChecked) => {
+    if(isCorrect ===true) {
+        setScore(score +1)
+    };
+    if(isChecked ===true) {
+        setScore(score + 1)
+    }
+
+
+    const nextQuestion = currentQuestion + 1;
+    if(nextQuestion < questions.length) {
+        setCurrentQuestion(nextQuestion);
+    } else {
+        setShowScore(true);
+    }
+};
+
+return (
 		<div className='quizapp'>
 			{/* HINT: replace "false" with logic to display the 
       score when the user has answered all the questions */}
-			{false ? (
-				<div className='score-section'>You scored 1 out of {questions.length}</div>
+			{showScore ? (
+				<div className='score-section'>You scored {score} out of {questions.length}</div>
 			) : (
 				<>
 					<div className='question-section'>
 						<div className='question-count'>
-							<span>Question 1</span>/{questions.length}
+							<span>Mood {currentQuestion + 1}</span>/{questions.length}
 						</div>
 						<div className='question-text'>{questions[currentQuestion].questionText}</div>
 					</div>
 					<div className='answer-section'>
-                        {questions[currentQuestion].answerOptions.map((answerOptions)=> <button>{answerOptions.answerText}</button>
-                        )}
+                        {questions[currentQuestion].answerOptions.map((answerOptions)=> 
+                        <button 
+                        onClick={()=> 
+                        handleAnswerButton(answerOptions.isChecked)}> 
+                        </button>
+                        
+            )}
 					</div>
 				</>
 			)}

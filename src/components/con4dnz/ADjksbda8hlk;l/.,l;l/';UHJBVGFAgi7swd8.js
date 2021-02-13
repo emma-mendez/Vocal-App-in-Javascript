@@ -46,7 +46,7 @@ class Con4dnz extends React.Component {
               <p>Can't Live Without It!! So Lets Get It!!</p>
                 <button 
                 class='buttonf'
-                onClick={""}>
+                onClick={"/quiz-mood"}>
                 How Are You Feeling Today?
                 </button>
                 <br></br>

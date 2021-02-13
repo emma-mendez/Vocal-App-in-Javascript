@@ -36,12 +36,6 @@ export class Success extends Component {
             <button class="buttonf">
             <Link to="/7Ygihbjnkbdafhisyf78re7t94ythiy5eht5io4y875erfygaikhbjadvchbdsvkdflmblgflg;knbjdhfgfiruv">Home</Link> 
             </button>
-            {/* <Button
-              color="primary"
-              variant="contained"
-              onClick={this.home}
-            >Return Home
-            </Button> */}
             </Box>
           </Dialog>
         </>
