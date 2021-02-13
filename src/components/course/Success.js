@@ -3,7 +3,7 @@ import Dialog from '@material-ui/core/Dialog';
 import AppBar from '@material-ui/core/AppBar';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
-import Button from '@material-ui/core/Button';
+import { Link } from 'react-router-dom';
 
 export class Success extends Component {
   continue = e => {
@@ -33,12 +33,15 @@ export class Success extends Component {
             <AppBar title="Success" />
             <Box p={5} bgcolor="background.paper" >
             <h1>Thank You For Your Submission</h1>
-            <Button
+            <button class="buttonf">
+            <Link to="/7Ygihbjnkbdafhisyf78re7t94ythiy5eht5io4y875erfygaikhbjadvchbdsvkdflmblgflg;knbjdhfgfiruv">Home</Link> 
+            </button>
+            {/* <Button
               color="primary"
               variant="contained"
               onClick={this.home}
             >Return Home
-            </Button>
+            </Button> */}
             </Box>
           </Dialog>
         </>
