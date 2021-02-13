@@ -80,7 +80,7 @@ export class FormPersonalDetails extends Component {
             m={1} 
             bgcolor="background.paper">
             <Button
-              color="primary"
+              color="orange"
               variant="contained"
               onClick={this.continue}
             >Continue</Button>

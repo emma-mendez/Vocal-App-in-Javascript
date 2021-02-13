@@ -22,7 +22,7 @@ const Page2 = () =>{
         <div class="content">
         <div>
             <header>
-            <img src='acslogo.png' class="logo" alt="logo" />
+            <img src='acslogo.png' className='App-logo2' alt="logo" />
             </header>
         <>
             <button class="buttonPages" onClick={redirect}> 

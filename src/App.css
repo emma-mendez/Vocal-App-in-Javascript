@@ -18,7 +18,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 40vh;
   pointer-events: none;
 }
 
@@ -30,27 +30,29 @@
  
   .content {
     /* Magic here */
-    height: -100vh; 
+    /* height: -100vh;  */
   }
   .App-logo {
-    height: 10vmin;
+    height: 30vh;
+    margin-bottom: 90px;
     pointer-events: none;
+  }
+
+  .App-logo2 {
+    height: 42vh;
+    margin-top: 490px;
   }
 
 
 .App-header {
   min-height: 80px;
   display: center;
-  /* flex-direction: column; */
-  /* align-items: center; */
-  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-img.resize {
-  /* you can use % */
-  width:540px; 
-  height: auto;
-}
+
 
 .App-link {
   color: #61dafb;
@@ -548,6 +550,11 @@ border-radius: 30px;
   pointer-events: none;
 }
 
+.App-logo2 {
+  height: 42vh;
+  margin-top: 490px;
+}
+
 /* @media (prefers-reduced-motion: no-preference) */
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -555,24 +562,30 @@ border-radius: 30px;
   
  
   .content {
-    height: -100vh; /* Magic here */
+    /* Magic here */
+    height: -100vh; 
   }
   .App-logo {
     height: 10vmin;
     pointer-events: none;
   }
 
+  .App-logo2 {
+    height: 42vh;
+    margin-top: 490px;
+  }
 
 .App-header {
-  min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  min-height: 80px;
+  display: center;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 img.resize {
-  width:540px; /* you can use % */
+  /* you can use % */
+  width:540px; 
   height: auto;
 }
 
@@ -620,7 +633,6 @@ img.resize {
   border-radius: 90px;
   border-width: 20px;
 }
-
 /* Glow Button */
 .glow.body {
   background-color: blue;
@@ -717,27 +729,27 @@ img.resize {
 }
 
 .button-inside:before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-  position: absolute;
-  left:-30px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(90% + 50px);
-  height: calc(70% + 20px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  border-radius: 10px;
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    left:-30px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(90% + 50px);
+    height: calc(70% + 20px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    border-radius: 10px;
 }
 
 .button-inside:active {
-    color: orange
+    color: orange~
 }
-/* 
+
 .button-inside:active:after {
     background: transparent;
-} */
+}
 
 .button-inside:hover:before {
     display: center;
@@ -766,7 +778,10 @@ img.resize {
 }
 
 .h2 {
-  margin-left: 0px;
+  margin-left: -0px;
+}
+.h2plus{
+  margin-left: -14px;
 }
 
 .span {
@@ -1044,18 +1059,6 @@ margin-right: 30px;
 border-radius: 30px;
 }
 
-.buttonzing {
-  top: 200px;
-display: center;
-border-block-color: grey;
-border-width: 3px;
-padding: 10px 50px;
-margin-block: 90px;
-background-color: orange;
-margin-right: 30px;
-border-radius: 30px;
-}
-
 }
 /* ........................................................................................ */
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -1081,6 +1084,11 @@ border-radius: 30px;
   pointer-events: none;
 }
 
+.App-logo2 {
+  height: 42vh;
+  margin-top: 490px;
+}
+
 /* @media (prefers-reduced-motion: no-preference) */
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -1088,7 +1096,8 @@ border-radius: 30px;
   
  
   .content {
-    height: -100vh; /* Magic here */
+    /* Magic here */
+    height: -100vh; 
   }
   .App-logo {
     height: 10vmin;
@@ -1097,15 +1106,16 @@ border-radius: 30px;
 
 
 .App-header {
-  min-height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  min-height: 80px;
+  display: center;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 img.resize {
-  width:540px; /* you can use % */
+  /* you can use % */
+  width:540px; 
   height: auto;
 }
 
@@ -1153,7 +1163,6 @@ img.resize {
   border-radius: 90px;
   border-width: 20px;
 }
-
 /* Glow Button */
 .glow.body {
   background-color: blue;
@@ -1250,27 +1259,27 @@ img.resize {
 }
 
 .button-inside:before {
-  content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-  position: absolute;
-  left:-30px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(90% + 50px);
-  height: calc(70% + 20px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  border-radius: 10px;
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    left:-30px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(90% + 50px);
+    height: calc(70% + 20px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    border-radius: 10px;
 }
 
 .button-inside:active {
-    color: orange
+    color: orange~
 }
-/* 
+
 .button-inside:active:after {
     background: transparent;
-} */
+}
 
 .button-inside:hover:before {
     display: center;
@@ -1299,7 +1308,10 @@ img.resize {
 }
 
 .h2 {
-  margin-left: 0px;
+  margin-left: -0px;
+}
+.h2plus{
+  margin-left: -14px;
 }
 
 .span {

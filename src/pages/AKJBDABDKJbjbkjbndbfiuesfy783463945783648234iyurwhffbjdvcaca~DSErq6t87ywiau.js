@@ -26,7 +26,7 @@ const previous = () => {
             <div class="content">
             <div>
             <header>
-            <img src='acslogo.png'  alt="logo" />
+            <img src='acslogo.png'  className='App-logo2' alt="logo" />
             </header>
             <>
                     <button class="buttonPages" onClick={redirectCourse}> 

@@ -88,7 +88,7 @@ export class FormUserDetails extends Component {
             <br />
             <Box p={5} bgcolor="background.paper">
             <Button
-              color="primary"
+              color="secondary"
               variant="contained"
               onClick={this.continue}
             >Continue</Button>

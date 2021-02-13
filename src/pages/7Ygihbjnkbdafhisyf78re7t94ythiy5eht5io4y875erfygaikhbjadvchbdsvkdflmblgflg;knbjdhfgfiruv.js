@@ -25,7 +25,7 @@ const Page3 = () =>{
         <div class="content">
         <div>
             <header className="App-header">
-            <img src='acslogo.png' className="logo" alt="logo" />
+            <img src='acslogo.png' className='App-logo2' alt="logo" />
             </header>
             <button class="buttonPages" 
             onClick={redirectStats}> 
