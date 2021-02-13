@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useState, useCallback } from 'react'
-// import classes from './Waveform.module.css'
-
+import classes from './Waveform.module.css'
 import waveformAvgChunker from './waveformAvgChunker'
 import useSetTrackProgress from './useSetTrackProgress'
 
@@ -8,7 +7,7 @@ const pointCoordinates = ({
   index, pointWidth, pointMargin, canvasHeight, amplitude,
 }) => {
   const pointHeight = Math.round((amplitude / 100) * canvasHeight)
-  const verticalCenter = Math.round((canvasHeight - pointHeight) / 2)
+  const verticalCenter = Math.round((canvasHeight - pointHeight) / -2)
   return [
     index * (pointWidth + pointMargin), // x starting point
     (canvasHeight - pointHeight) - verticalCenter, // y starting point

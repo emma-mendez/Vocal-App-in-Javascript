@@ -1,6 +1,6 @@
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 200px) {
 
   body {
     background-color: white;
@@ -107,7 +107,69 @@
     justify-content: center;
     align-items: center;
 }
+/* button-nav-red */
+.h1-red { 
+  color: black;
+  font-weight: bold;
+ }
+.button-nav-red {
+  display: center;
+  margin-right: 150px;
+  margin-left: 150px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  width: 52px;
+  height: 50px;
+  border: solid;
+  outline: none;
+  color: red;
+  background: white;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
 
+.button-nav-red:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  border-radius: 10px;
+}
+
+.button-nav-red:active {
+  color: orange
+}
+
+.button-nav-red:active:after {
+  background: transparent;
+}
+
+.button-nav-red:hover:before {
+  opacity: 1;
+}
+
+.button-nav-red:after {
+  z-index: -1;
+  content: ;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+/* button-nav-red */
 .button-nav {
     display: center;
     margin-right: 150px;
@@ -586,7 +648,7 @@ border-radius: 30px;
 /* ........................................................................................ */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 600px) {
  
   body {
     background-color: white;

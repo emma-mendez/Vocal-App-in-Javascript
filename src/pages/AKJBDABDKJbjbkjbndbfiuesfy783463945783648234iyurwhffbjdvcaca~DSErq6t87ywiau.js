@@ -32,7 +32,7 @@ const previous = () => {
                     <button class="buttonPages" onClick={redirectCourse}> 
                     <p class="button-inside"><h1 class='h2'>SING</h1></p></button>
                     <br></br>
-                    <button class="button-nav" onClick={previous}>BACK</button>
+                    <button class="button-nav-red" onClick={previous}><p className='h1-red'>EXIT</p><br></br></button>
                     <button class="button-nav" onClick={next}>NEXT</button>
                     <br></br>
                     <button class="buttonPages" onClick={redirectStudio}>
