@@ -1,15 +1,36 @@
 import React, { useState } from 'react';
-
+import '../con4dnz/quiz.css';
 export default function Quiz() {
 	const questions = [
 		{
-			questionText: 'What is the capital of France?',
+			questionText: 'How are you feeling today?',
 			answerOptions: [
-				{ answerText: 'New York', isCorrect: false },
-				{ answerText: 'London', isCorrect: false },
-				{ answerText: 'Paris', isCorrect: true },
-				{ answerText: 'Dublin', isCorrect: false },
-			],
+				{ answerText: 'Senitive', isCorrect: true },
+				{ answerText: 'Mood Swings', isCorrect: true },
+				{ answerText: 'Emotional', isCorrect: true },
+                { answerText: 'Irritable', isCorrect: true },
+                { answerText: 'Worried', isCorrect: true },
+                { answerText: 'Confused', isCorrect: true },
+                { answerText: 'Disappointed', isCorrect: true },
+                { answerText: 'Tired', isCorrect: true },
+                { answerText: 'Stressed', isCorrect: true },
+                { answerText: 'Sad', isCorrect: true },
+                { answerText: 'Normal', isCorrect: true },
+                { answerText: 'Happy', isCorrect: true },
+                { answerText: 'Angry', isCorrect: true },
+                { answerText: 'Panicky', isCorrect: true },
+                { answerText: 'Frisky', isCorrect: true },
+                { answerText: 'Depressed', isCorrect: true },
+                { answerText: 'Anxious', isCorrect: true },
+                { answerText: 'Bored', isCorrect: true },
+                { answerText: 'Exicited', isCorrect: true },
+                { answerText: 'Gassed', isCorrect: true },
+                { answerText: 'Hopeful', isCorrect: true },
+                { answerText: 'Beaming', isCorrect: true },
+                { answerText: 'Loved', isCorrect: true },
+                { answerText: 'Ready', isCorrect: true },
+                { answerText: 'Spiritual', isCorrect: true },
+            ],
 		},
 		{
 			questionText: 'Who is CEO of Tesla?',
@@ -40,8 +61,10 @@ export default function Quiz() {
 		},
 	];
 
+
+const [currentQuestion, setCurrentQuestion] = useState(0);
 	return (
-		<div className='app'>
+		<div className='quizapp'>
 			{/* HINT: replace "false" with logic to display the 
       score when the user has answered all the questions */}
 			{false ? (
@@ -52,13 +75,11 @@ export default function Quiz() {
 						<div className='question-count'>
 							<span>Question 1</span>/{questions.length}
 						</div>
-						<div className='question-text'>This is where the question text should go</div>
+						<div className='question-text'>{questions[currentQuestion].questionText}</div>
 					</div>
 					<div className='answer-section'>
-						<button>Answer 1</button>
-						<button>Answer 2</button>
-						<button>Answer 3</button>
-						<button>Answer 4</button>
+                        {questions[currentQuestion].answerOptions.map((answerOptions)=> <button>{answerOptions.answerText}</button>
+                        )}
 					</div>
 				</>
 			)}
