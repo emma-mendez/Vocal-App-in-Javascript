@@ -13,10 +13,9 @@ import Journal from './pages/kjbuy^TTgyugvhcfYTGHJVGHCFTUyiu8978t6tyugvhcfvhgjyu
 import FaceRecognition from './components/FaceRecognition';
 import { UserForm } from './components/course/JVJHBKJHIbvgjbjkugyTYGHV786ftuvgjkui876FTYGHvcfdryTYGHOJPllkjh'
 import StudioMenu from './pages/GCVJHIUH7y8tygujghbkVGTF67TGYHbkhjgvcukjlmkljhjklnj,.kjuygu';
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import FourTrack from './components/FourTrackStudio/fourTrack'
 import FourTrackStudioRecorder from './components/HVSYTG87yhuijbhGBHSVFT*76ftyuygiuhILJKM.L,;OKIHUGYUT6756E4ryftgvhb'
 import Con4dnz from './components/con4dnz/ADjksbda8hlk;l/.,l;l/\';UHJBVGFAgi7swd8';
+import Quiz from './components/con4dnz/Quiz';
 
 
 const GlobalStyles = createGlobalStyle`
@@ -103,6 +102,12 @@ class App extends Component {
        <Route exact path="/ADjksbda8hlk;l/.,l;l/;UHJBVGFAgi7swd8" render={() => (
           <>
       <Con4dnz />
+      </>
+       )} />
+        {/* Confidence */}
+        <Route exact path="/quiz" render={() => (
+          <>
+      <Quiz />
       </>
        )} />
        {/* Four Track Studio */}
