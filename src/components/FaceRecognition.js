@@ -91,9 +91,11 @@ return (
         }}
       />
     </header>
+    <br></br>
     <button 
-    class="buttonf"> 
-    <Link to="/page3">Back</Link> </button>
+    class="buttonzing"> 
+    <Link to="/page3">Back</Link> 
+    </button>
   </div>
   <div>
   </div>
