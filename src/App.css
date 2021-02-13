@@ -142,7 +142,6 @@ img.resize {
     height: calc(100% + 4px);
     animation: glowing 20s linear infinite;
     opacity: 0;
-    transition: opacity .3s ease-in-out;
     border-radius: 10px;
 }
 
@@ -199,26 +198,24 @@ img.resize {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
-    top: -10px;
     left:-40px;
     background-size: 400%;
     z-index: -1;
     filter: blur(5px);
-    width: calc(110% + 70px);
-    height: calc(100% + 20px);
+    width: calc(100% + 60px);
+    height: calc(70% + 20px);
     animation: glowing 20s linear infinite;
     opacity: 0;
-    transition: opacity .3s ease-in-out;
     border-radius: 10px;
 }
 
 .button-inside:active {
-    color: orange
+    color: orange~
 }
-/* 
+
 .button-inside:active:after {
     background: transparent;
-} */
+}
 
 .button-inside:hover:before {
     display: center;
@@ -669,7 +666,6 @@ img.resize {
     height: calc(100% + 4px);
     animation: glowing 20s linear infinite;
     opacity: 0;
-    transition: opacity .3s ease-in-out;
     border-radius: 10px;
 }
 
@@ -735,7 +731,6 @@ img.resize {
     height: calc(100% + 20px);
     animation: glowing 20s linear infinite;
     opacity: 0;
-    transition: opacity .3s ease-in-out;
     border-radius: 10px;
 }
 
@@ -1207,7 +1202,6 @@ img.resize {
     height: calc(100% + 4px);
     animation: glowing 20s linear infinite;
     opacity: 0;
-    transition: opacity .3s ease-in-out;
     border-radius: 10px;
 }
 
@@ -1273,7 +1267,6 @@ img.resize {
     height: calc(100% + 20px);
     animation: glowing 20s linear infinite;
     opacity: 0;
-    transition: opacity .3s ease-in-out;
     border-radius: 10px;
 }
 
