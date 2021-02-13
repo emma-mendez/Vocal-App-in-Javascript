@@ -90,13 +90,10 @@ img.resize {
 
 .buttonPages {
   border-block-color: grey;
-  /* margin-right: 60px; */
-  /* border-width: 13px; */
-  padding: 150px 150px;
-  /* margin-block: 50px; */
+  padding: 100px 100px;
+  margin-block: 50px;
   background-color: orange;
   border-radius: 90px;
-  /* display: center; */
   border-width: 20px;
 }
 /* Glow Button */
@@ -115,8 +112,8 @@ img.resize {
 
 .button-nav {
     display: center;
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-right: 150px;
+    margin-left: 150px;
     width: 52px;
     height: 50px;
     border: solid;
@@ -198,11 +195,11 @@ img.resize {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
-    left:-40px;
+    left:-30px;
     background-size: 400%;
     z-index: -1;
     filter: blur(5px);
-    width: calc(90% + 60px);
+    width: calc(90% + 50px);
     height: calc(70% + 20px);
     animation: glowing 20s linear infinite;
     opacity: 0;
@@ -244,7 +241,10 @@ img.resize {
 }
 
 .h2 {
-  margin-left: 0px;
+  margin-left: -0px;
+}
+.h2plus{
+  margin-left: -14px;
 }
 
 .span {
@@ -614,15 +614,13 @@ img.resize {
 
 .buttonPages {
   border-block-color: grey;
-  /* margin-right: 60px; */
-  /* border-width: 13px; */
-  padding: 150px 150px;
-  /* margin-block: 50px; */
+  padding: 100px 100px;
+  margin-block: 50px;
   background-color: orange;
   border-radius: 90px;
-  /* display: center; */
   border-width: 20px;
 }
+
 /* Glow Button */
 .glow.body {
   background-color: blue;
@@ -639,8 +637,8 @@ img.resize {
 
 .button-nav {
     display: center;
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-right: 150px;
+    margin-left: 150px;
     width: 52px;
     height: 50px;
     border: solid;
@@ -722,11 +720,11 @@ img.resize {
   content: '';
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
   position: absolute;
-  left:-40px;
+  left:-30px;
   background-size: 400%;
   z-index: -1;
   filter: blur(5px);
-  width: calc(90% + 60px);
+  width: calc(90% + 50px);
   height: calc(70% + 20px);
   animation: glowing 20s linear infinite;
   opacity: 0;
@@ -1149,15 +1147,13 @@ img.resize {
 
 .buttonPages {
   border-block-color: grey;
-  /* margin-right: 60px; */
-  /* border-width: 13px; */
-  padding: 150px 150px;
-  /* margin-block: 50px; */
+  padding: 100px 100px;
+  margin-block: 50px;
   background-color: orange;
   border-radius: 90px;
-  /* display: center; */
   border-width: 20px;
 }
+
 /* Glow Button */
 .glow.body {
   background-color: blue;
@@ -1174,8 +1170,8 @@ img.resize {
 
 .button-nav {
     display: center;
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-right: 150px;
+    margin-left: 150px;
     width: 52px;
     height: 50px;
     border: solid;
@@ -1257,11 +1253,11 @@ img.resize {
   content: '';
   background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
   position: absolute;
-  left:-40px;
+  left:-30px;
   background-size: 400%;
   z-index: -1;
   filter: blur(5px);
-  width: calc(90% + 60px);
+  width: calc(90% + 50px);
   height: calc(70% + 20px);
   animation: glowing 20s linear infinite;
   opacity: 0;
