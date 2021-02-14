@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 
-
 function Form() {
-
+  const [show, setShow] = useState(true)
   const {register, handleSubmit} = useForm();
   const [inputUserName, setUserName] = useState("");
   const [inputUserPassword, setUserPassword] = useState("");
@@ -66,13 +65,19 @@ function Form() {
         value={inputUserPassword}
 
         />
-        <br/>
         <button 
         type="submit"
         class="buttonf" 
         >Submit
         </button>
+        <button 
+        type="submit"
+        class="buttonf" 
+        ><Link to={"/index"}>close</Link>
+        </button>
         </form>
+
+       
       </div>
     );
   }

@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
+import { Link } from 'react-router-dom';
+
 import {useForm} from "react-hook-form";
 // import { BrowserRouter as Router, Switch, Route, Link, Prompt} from "react-router-dom";
 
@@ -86,6 +88,11 @@ function RegistrationForm({ handleClose }) {
         class="buttonf" 
         >Submit
       </button>
+      <button 
+        type="submit"
+        class="buttonf" 
+        ><Link to={"/index"}>close</Link>
+        </button>
         </form>
       </div>
 

@@ -48,6 +48,12 @@ class App extends Component {
         <Dashboard/>
         </>
              )} />
+             <Route exact path="/index" render={() => (
+                <>
+           <Header />
+        <Dashboard/>
+        </>
+             )} />
              {/* Home */}
             <Route exact path="/AKJBDABDKJbjbkjbndbfiuesfy783463945783648234iyurwhffbjdvcaca~DSErq6t87ywiau" render={() => (
                 <>
