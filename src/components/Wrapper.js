@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  position: relative;
-  // padding-top: -40px;
-  padding-left: 420px;
-  padding-right: 420px;
+  position: bottom;
+  padding-top: -40px;
+  padding-left: 20px;
+  padding-right: 20px;
   overflow-x: hidden;
   background: ${props => props.vizColor};
 
@@ -16,7 +16,7 @@ const Wrapper = styled.div`
   }
 
   svg {
-    // display: block;
+    display: block;
     margin: 0 auto;
     position: relative;
     z-index: 100;
@@ -24,7 +24,7 @@ const Wrapper = styled.div`
   }
 
   #white-bg-buttons {
-    fill: #19ca90;
+    // fill: #19ca90;
   }
 `;
 

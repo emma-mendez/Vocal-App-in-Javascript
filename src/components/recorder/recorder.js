@@ -52,7 +52,6 @@ export class Recorder {
         numChannels;
 
       this.onmessage = function(e) {
-        // eslint-disable-next-line
         switch (e.data.command) {
           case "init":
             init(e.data.config);

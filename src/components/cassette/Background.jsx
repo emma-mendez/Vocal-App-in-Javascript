@@ -4,8 +4,7 @@ import { ThemeConsumer } from "../../core/ThemeContext";
 const Background = () => (
   <ThemeConsumer>
     {context => (
-      <g 
-      id="background" transform="translate(.279)">
+      <g id="background" transform="translate(.279)">
         <rect
           id="bg-buttons"
           width={529}

@@ -1530,11 +1530,15 @@ padding-bottom: 50px;
 }
 
 .h2 {
-margin-left: -0px;
+margin-left: -10px;
 }
 .h2plus{
-margin-left: -14px;
+margin-left: -3.5vh;
 }
+
+.h2plus1{
+  margin-left: -3vh;
+  }
 
 .span {
 padding-right: 15px;

@@ -33,7 +33,7 @@ const Page2 = () =>{
             <button class="button-nav" onClick={next}>NEXT</button>
             <br></br>
             <button class="buttonPages" onClick={redirectJ}>
-            <p class="button-inside"><h1 class='h2plus'>JOURNAL</h1></p>
+            <p class="button-inside"><h1 class='h2plus1'>JOURNAL</h1></p>
             </button>
             </>
             <br></br>
