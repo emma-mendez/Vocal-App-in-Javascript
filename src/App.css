@@ -29,7 +29,7 @@
     /* height: -100vh;  */
   }
   .App-logo {
-    height: 32vh;
+    height: 42vh;
     margin-top: 5vh;
     margin-bottom: 90px;
     pointer-events: none;
@@ -41,7 +41,7 @@
   }
 
 .App-header {
-  max-height: -10vh;
+  min-height: 70px;
   display: center;
   flex-direction: column;
   align-items: center;
@@ -619,13 +619,13 @@ float: center;
 }
 
 .buttonf {
-top: 200px;
+top: 400vh;
 display: center;
 border-block-color: grey;
 border-width: 3px;
 padding: 10px 50px;
 margin-block: 20px;
-background-color: orange;
+background-color: white;
 margin-right: 30px;
 border-radius: 30px;
 }
@@ -651,7 +651,7 @@ border-radius: 30px;
 @media only screen and (max-width: 600px) {
  
   body {
-    background-color: white;
+    background-color: pink;
     display: center;
   }
 
@@ -682,9 +682,9 @@ border-radius: 30px;
     height: -100vh; 
   }
   .App-logo {
-    height: 42vh;
-    margin-top: 5vh;
-    margin-bottom: 90px;
+    height: 32vh;
+    margin-top: 19vh;
+    margin-bottom: 120px;
     pointer-events: none;
   }
 
@@ -1212,7 +1212,7 @@ float: center;
 }
 
 .buttonf {
-top: 200px;
+top: 300px;
 display: center;
 border-block-color: grey;
 border-width: 3px;
