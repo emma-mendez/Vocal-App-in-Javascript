@@ -1339,6 +1339,18 @@ background-color: orange;
 border-radius: 90px;
 border-width: 20px;
 }
+
+.buttonPages2 {
+  border-block-color: grey;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  margin-bottom: 4vh;
+  padding: 100px 100px;
+  /* margin-block: 50px; */
+  background-color: orange;
+  border-radius: 90px;
+  border-width: 20px;
+  }
 /* Glow Button */
 .glow.body {
 background-color: blue;
@@ -1473,6 +1485,7 @@ background-color: blue;
 /* glow button inside studio */
 .button-inside2 {
 display: center;
+padding-left: px;
 width: 95px;
 height: 50px;
 border: none;

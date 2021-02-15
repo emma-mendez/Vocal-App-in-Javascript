@@ -19,10 +19,10 @@ const StudioMenu = () =>{
             <header className="App-header">
             <img src='acslogo.png' className='App-logo2' alt="logo" />
             </header>
-            <button class="buttonPages" onClick={redirect}> 
+            <button class="buttonPages2" onClick={redirect}> 
             <p class="button-inside2"><h1 class='h2'>SINGLE TRACK</h1></p>
             </button>
-            <button class="buttonPages" onClick={redirectFour}>
+            <button class="buttonPages2" onClick={redirectFour}>
             <p class="button-inside2"><h1 class='h2'>FOUR TRACK </h1></p>
             </button>
             <br></br>
