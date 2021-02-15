@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from 'react-router-dom'
+
 
 const WavesContainer = styled.div`
   position: relative;
@@ -42,7 +44,12 @@ class AudioWaves extends React.Component {
           <h2>
             Record your freestyle!
           </h2>
-
+          <button className='buttonf'>
+          <Link 
+          to='GCVJHIUH7y8tygujghbkVGTF67TGYHbkhjgvcukjlmkljhjklnj,.kjuygu'>
+            Back
+            </Link>
+            </button>
           {waves}
         </div>
       </WavesContainer>
