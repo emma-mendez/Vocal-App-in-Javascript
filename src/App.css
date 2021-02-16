@@ -17,11 +17,7 @@
   text-align: center;
 }
 
-.cassettecontainer {
-  width: 100vw;
-  background-color: #0247FE;
-  padding-top: 10vh;
-}
+
 
 
 /* @media (prefers-reduced-motion: no-preference) */
@@ -1846,7 +1842,16 @@ border-radius: 30px;
 }
 
 
+.blueblock {
+  background-color: white;
+  padding-left: 0vh ;
+  margin-right: 100px;
+}
 
+.cassettecontainer {
+  background-color: white;
+  padding-bottom: -40vh;
+}
 
 /* ............................................................................................. */
 /* Medium devices (landscape tablets, 768px and up) */

@@ -1,19 +1,21 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  position: bottom;
-  padding-top: -40px;
+  position: absolute;
+  padding-top: -60px;
   padding-left: 20px;
   padding-right: 20vw;
+  margin-bottom: 20vh;
   overflow-x: visable;
-  width: 100px;
-  background: ${props => props.vizColor};
+  width: 950px;
+  // background: ${props => props.vizColor};
 
   #defaultCanvas0 {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 10;
+    width: 1000vw;
   }
 
   svg {
@@ -25,7 +27,7 @@ const Wrapper = styled.div`
   }
 
   #white-bg-buttons {
-    // fill: #19ca90;
+    fill: #19ca90;
   }
 `;
 
