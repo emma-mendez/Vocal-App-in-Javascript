@@ -14,24 +14,32 @@ function RegistrationForm({ handleClose }) {
     const [inputUserPassword, setUserPassword] = useState("");
       
       const onSubmit = async () => { 
-        const response = await fetch('https://fierce-peak-48968.herokuapp.com/signup', {
-          method: 'POST',
-          headers: {
-            'Accept' : 'application/json',
-            'Content-Type' : 'application/json'
-          },
-          body: JSON.stringify({
-            userName: inputUserName,
-            firstName: inputFirstName,
-            lastName: inputLastName,
-            password: inputUserPassword
-          })
-        })
-        const json = await response.json()
-        window.alert(json.message)
-        console.log(inputFirstName)
-        console.log(inputLastName)
+          if(inputUserName.length > 2) {
+          const response = await fetch('https://fierce-peak-48968.herokuapp.com/signup', {
+            method: 'POST',
+            headers: {
+              'Accept' : 'application/json',
+              'Content-Type' : 'application/json'
+            },
+            body: JSON.stringify({
+              userName: inputUserName,
+              firstName: inputFirstName,
+              lastName: inputLastName,
+              password: inputUserPassword
+            }),
   
+          })
+          const json = await response.json()
+          window.alert(json.message)
+          console.log(inputFirstName)
+          console.log(inputLastName)
+  
+          } else { 
+            window.alert ("No Data")
+
+          }
+
+        
       console.log("Good to GO Emma!")
       handleClose()
     }
