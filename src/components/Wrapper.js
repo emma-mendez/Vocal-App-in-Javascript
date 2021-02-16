@@ -4,7 +4,7 @@ const Wrapper = styled.div`
   position: bottom;
   padding-top: -40px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 20vw;
   overflow-x: visable;
   width: 100px;
   background: ${props => props.vizColor};
