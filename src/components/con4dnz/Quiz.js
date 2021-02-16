@@ -106,12 +106,8 @@ return (
 						<div className='question-text'>{questions[currentQuestion].questionText}</div>
 					</div>
 					<div className='answer-section'>
-                        {questions[currentQuestion].answerOptions.map((answerOptions)=> 
-                        <button 
-                        onClick={()=> 
-                        handleAnswerButton(answerOptions.isChecked)}> 
-                        </button>
-                        
+                        {questions[0].answerOptions.map((answerOptions)=> 
+                        <button>{answerOptions.answerText}</button>
             )}
 					</div>
 				</>

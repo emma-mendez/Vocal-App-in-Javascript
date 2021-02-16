@@ -5,7 +5,8 @@ const Wrapper = styled.div`
   padding-top: -40px;
   padding-left: 20px;
   padding-right: 20px;
-  overflow-x: hidden;
+  overflow-x: visable;
+  width: 100px;
   background: ${props => props.vizColor};
 
   #defaultCanvas0 {

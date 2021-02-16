@@ -23,13 +23,13 @@ ${styledNormalize};
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-body {
-  font-family: 'Source Sans Pro', 'sans-serif';
-  font-weight: 400;
-}
+// *, *:before, *:after {
+//   box-sizing: inherit;
+// }
+// body {
+//   font-family: 'Source Sans Pro', 'sans-serif';
+//   font-weight: 400;
+// }
 `;
 
 class App extends Component {

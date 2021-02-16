@@ -39,8 +39,8 @@ class AudioWaves extends React.Component {
     ));
 
     return (
-      <WavesContainer>
-        <div>
+      // <WavesContainer>
+        <div className="cassettecontainer">
           <h2>
             Record your freestyle!
           </h2>
@@ -52,7 +52,7 @@ class AudioWaves extends React.Component {
             </button>
           {waves}
         </div>
-      </WavesContainer>
+      // </WavesContainer>
     );
   }
 }

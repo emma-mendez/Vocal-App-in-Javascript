@@ -143,7 +143,7 @@ class CassetteTape extends React.Component {
       >
         <Wrapper
           ref={this.casseteRef}
-          className="cassette-wrapper"
+          // className="cassette-wrapper"
           vizColor={vizColor}
         >
           <Cassette>
