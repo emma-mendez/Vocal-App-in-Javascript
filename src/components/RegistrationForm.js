@@ -99,7 +99,7 @@ function RegistrationForm({ handleClose }) {
       <button 
         type="submit"
         class="buttonf" 
-        ><Link to={"/index"}>close</Link>
+        ><Link to={"/index"}>Close</Link>
         </button>
         </form>
       </div>
