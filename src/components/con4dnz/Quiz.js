@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../con4dnz/quiz.css';
+import Link from 'react-dom'
 
 
 
@@ -96,7 +97,14 @@ return (
 			{/* HINT: replace "false" with logic to display the 
       score when the user has answered all the questions */}
 			{showScore ? (
-				<div className='score-section'>You scored {score} out of {questions.length}</div>
+				<>
+				<div className='score-section'>You scored {score} out of {questions.length}. <br></br> 
+				<br></br>I Encourage You To Win Today! Whatever The Weather <br>
+				</br>- Emma Mendez</div>
+				<button className='buttonq'><a href="/ADjksbda8hlk;l/.,l;l/;UHJBVGFAgi7swd8">Close</a>
+				</button>
+				</>
+
 			) : (
 				<>
 					<div className='question-section'>
@@ -106,13 +114,15 @@ return (
 						<div className='question-text'>{questions[currentQuestion].questionText}</div>
 					</div>
 					<div className='answer-section'>
-                        {questions[currentQuestion].answerOptions.map((answerOptions)=> 
-                        <button
-						onClick={handleAnswerButton}>{answerOptions.answerText}</button>
-            )}
+						{questions[currentQuestion].answerOptions.map((answerOption) => (
+							<button onClick={() => handleAnswerButton(answerOption.isCorrect)}>{answerOption.answerText}</button>
+						))}
+					</div>
+					<div>
 					</div>
 				</>
 			)}
 		</div>
 	);
 }
+

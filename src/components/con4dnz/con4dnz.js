@@ -45,20 +45,6 @@ Button.defaultProps= {
 function toDo(){
 }
 
-// const types = ["1", "2", "3"]
-
-// function ToggleGroup(){ ActiveXObject, setactive 
-
-
-//     const [active, setActive = useState(types[0])]
-//     return 
-//     <div>
-//         {types.map}
-//     </div>
-
-// }
-
-
 
 export default function con4dnz() {
     return (
@@ -79,6 +65,9 @@ export default function con4dnz() {
                 To Do List
                 </Button>
             </div>
+
+            <Button theme='' ><a href="/JVjhdbkjDVGfda8e7dwy9845y2h3iwhjvGHCHVSCKBJNZBFAIUFYA9">Close</a>
+				</Button>
         </>
     );
 }

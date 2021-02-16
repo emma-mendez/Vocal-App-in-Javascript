@@ -14,7 +14,7 @@ quizbody {
     color: #black;
   }
   
-  quizbody {
+  .quizbody {
     background-color: #7cc6fe;
     display: flex;
     justify-content: center;
@@ -74,9 +74,10 @@ quizbody {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 6vw;
   }
   
-  quizbutton {
+  .quizbutton {
     width: 100%;
     font-size: 16px;
     color: #ffffff;
@@ -98,16 +99,24 @@ quizbody {
     background-color: #ff3333;
   }
   
-  quizbutton:hover {
+  .quizbutton:hover {
     background-color: #555e7d;
   }
   
-  quizbutton:focus {
+  .quizbutton:focus {
     outline: none;
   }
   
-  quizbutton svg {
+  .quizbutton svg {
     margin-right: 5px;
+  }
+
+  .buttonq {
+    display: center;
+    padding-top: -10vh;
+    background-color: orange;
+    margin-top: 30vh;
+    border: transparent;
   }
 }
 
