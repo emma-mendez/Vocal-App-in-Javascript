@@ -106,8 +106,9 @@ return (
 						<div className='question-text'>{questions[currentQuestion].questionText}</div>
 					</div>
 					<div className='answer-section'>
-                        {questions[0].answerOptions.map((answerOptions)=> 
-                        <button>{answerOptions.answerText}</button>
+                        {questions[currentQuestion].answerOptions.map((answerOptions)=> 
+                        <button
+						onClick={handleAnswerButton}>{answerOptions.answerText}</button>
             )}
 					</div>
 				</>
