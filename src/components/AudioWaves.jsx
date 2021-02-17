@@ -41,8 +41,13 @@ class AudioWaves extends React.Component {
     return (
       // <WavesContainer>
         <div className="cassettecontainer">
-          <h2 className='blueblock'>
+          <h2>
             Record your freestyle!
+            <br></br>
+            1. Press Play(select a beat)
+            <br></br>
+            2. Then Press recored!
+
           </h2>
           <button className='buttonf'>
           <Link 

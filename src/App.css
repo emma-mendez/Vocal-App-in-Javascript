@@ -1837,7 +1837,7 @@ border-width: 3px;
 padding: 10px 50px;
 margin-block: 20px;
 background-color: orange;
-margin-right: 30px;
+margin-right: initial;
 border-radius: 30px;
 }
 
