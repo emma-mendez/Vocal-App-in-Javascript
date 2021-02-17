@@ -12822,10 +12822,10 @@
     "virtual-dom" "^2.1.1"
     "webaudio-peaks" "^0.0.6"
 
-"wavesurfer.js@^4.4.0":
-  "integrity" "sha512-R8knBQRY2FjMYGn0Tp+obv55sk494tEaCanM+rpqNmuAhwknan4BL7SIIevwL3QgDbH75R8XUiQVczhvo6XW+A=="
-  "resolved" "https://registry.npmjs.org/wavesurfer.js/-/wavesurfer.js-4.4.0.tgz"
-  "version" "4.4.0"
+"wavesurfer.js@^2.0.6":
+  "integrity" "sha512-DMrgRN04dUK1YA4MDIMKx1EcIab7wtNcf2OE1Gn3ASnob4JMK3pwph/29ioph8UiHykMTloJIsPurvlC9NZVOQ=="
+  "resolved" "https://registry.npmjs.org/wavesurfer.js/-/wavesurfer.js-2.2.1.tgz"
+  "version" "2.2.1"
 
 "wbuf@^1.1.0", "wbuf@^1.7.3":
   "integrity" "sha512-O84QOnr0icsbFGLS0O3bI5FswxzRr8/gHwWkDlQFskhSPryQXvrTMxjxGP4+iWYoauLoBvfDpkrOauZ+0iZpDA=="
