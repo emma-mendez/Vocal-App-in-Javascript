@@ -66,7 +66,8 @@ export default function con4dnz() {
                 </Button>
             </div>
 
-            <Button theme='' ><a href="/JVjhdbkjDVGfda8e7dwy9845y2h3iwhjvGHCHVSCKBJNZBFAIUFYA9">Close</a>
+            <Button theme='' ><a href="/JVjhdbkjDVGfda8e7dwy9845y2h3iwhjvGHCHVSCKBJNZBFAIUFYA9"
+            className='blacktextbutton' >Close</a>
 				</Button>
         </>
     );

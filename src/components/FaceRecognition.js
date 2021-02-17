@@ -91,9 +91,12 @@ return (
       />
     </header>
     <br></br>
+    <h1 className='facerecmargin'>Instructions: Open Your Mouth - Have Fun Giving Your Face/Articulators A Good Stretch </h1>
+    <h2>Fun Updates Coming Soon...</h2>
     <button 
     class="buttonzing"> 
-    <Link to="/7Ygihbjnkbdafhisyf78re7t94ythiy5eht5io4y875erfygaikhbjadvchbdsvkdflmblgflg;knbjdhfgfiruv">Back</Link> 
+    <Link to="/7Ygihbjnkbdafhisyf78re7t94ythiy5eht5io4y875erfygaikhbjadvchbdsvkdflmblgflg;knbjdhfgfiruv"
+    className='blacktextbutton' >Back</Link> 
     </button>
   </div>
   <div>

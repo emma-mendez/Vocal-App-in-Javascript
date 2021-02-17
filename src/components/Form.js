@@ -73,7 +73,7 @@ function Form() {
         <button 
         type="submit"
         class="buttonf" 
-        className='buttonf'><a href="/">Close</a>
+        className='buttonf'><a href="/" className='blacktextbutton'>Close</a>
 				</button>       
         </form>
 

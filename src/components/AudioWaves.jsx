@@ -46,7 +46,8 @@ class AudioWaves extends React.Component {
           </h2>
           <button className='buttonf'>
           <Link 
-          to='GCVJHIUH7y8tygujghbkVGTF67TGYHbkhjgvcukjlmkljhjklnj,.kjuygu'>
+          to='GCVJHIUH7y8tygujghbkVGTF67TGYHbkhjgvcukjlmkljhjklnj,.kjuygu'
+          className='blacktextbutton'>
             Back
             </Link>
             </button>

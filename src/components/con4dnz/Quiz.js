@@ -101,7 +101,8 @@ return (
 				<div className='score-section'>You scored {score} out of {questions.length}. <br></br> 
 				<br></br>I Encourage You To Win Today! Whatever The Weather <br>
 				</br>- Emma Mendez</div>
-				<button className='buttonq'><a href="/ADjksbda8hlk;l/.,l;l/;UHJBVGFAgi7swd8">Close</a>
+				<button className='buttonq'><a href="/ADjksbda8hlk;l/.,l;l/;UHJBVGFAgi7swd8"
+				className='blacktextbutton'>Close</a>
 				</button>
 				</>
 

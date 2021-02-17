@@ -621,6 +621,7 @@ float: center;
 }
 
 .buttonf {
+outline: 0;
 top: 400vh;
 display: center;
 border-block-color: grey;
@@ -632,7 +633,7 @@ margin-right: 30px;
 border-radius: 30px;
 }
 
-.buttonzing {
+.buttonzing {outline: 0;
   display: center;
   border-block-color: grey;
   border-width: 3px;
@@ -643,6 +644,9 @@ border-radius: 30px;
   border-radius: 30px;
   }
 
+  .blacktextbutton {
+    color: black;
+  }
 
   /* Css Index from quiz in con4dnze */
   
@@ -883,6 +887,10 @@ img.resize {
 }
 
  /* button inside */
+
+ .blacktextbutton {
+  color: black;
+}
 
 /* glow button inside studio */
 .button-inside2 {
@@ -1213,7 +1221,8 @@ float: center;
 
 }
 
-.buttonf {
+.buttonf {outline: 0;
+
 top: 300px;
 display: center;
 border-block-color: grey;
@@ -1225,7 +1234,8 @@ margin-right: 30px;
 border-radius: 30px;
 }
 
-.buttonzing {
+.buttonzing {outline: 0;
+
   display: center;
   border-block-color: grey;
   border-width: 3px;
@@ -1818,7 +1828,8 @@ float: center;
 
 }
 
-.buttonf {
+.buttonf {outline: 0;
+
 top: 300px;
 display: center;
 border-block-color: grey;
@@ -1830,12 +1841,13 @@ margin-right: 30px;
 border-radius: 30px;
 }
 
-.buttonzing {
+.buttonzing {outline: 0;
+
 display: center;
 border-block-color: grey;
 border-width: 3px;
 padding: 10px 50px;
-margin-top: 60vh;
+margin-top: 6vh;
 background-color: orange;
 margin-right: 30px;
 border-radius: 30px;
@@ -1851,6 +1863,14 @@ border-radius: 30px;
 .cassettecontainer {
   background-color: white;
   padding-bottom: -40vh;
+}
+
+.blacktextbutton {
+  color: black;
+}
+
+.facerecmargin {
+  margin-top: 60vh;
 }
 
 /* ............................................................................................. */

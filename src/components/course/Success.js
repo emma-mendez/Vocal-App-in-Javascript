@@ -34,7 +34,9 @@ export class Success extends Component {
             <Box p={5} bgcolor="background.paper" >
             <h1>Thank You For Your Submission</h1>
             <button class="buttonf">
-            <Link to="/AKJBDABDKJbjbkjbndbfiuesfy783463945783648234iyurwhffbjdvcaca~DSErq6t87ywiau">Home</Link> 
+            <Link to="/AKJBDABDKJbjbkjbndbfiuesfy783463945783648234iyurwhffbjdvcaca~DSErq6t87ywiau" 
+            className='blacktextbutton'
+            > Return Home</Link> 
             </button>
             </Box>
           </Dialog>
