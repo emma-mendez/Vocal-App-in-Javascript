@@ -8,7 +8,7 @@ const Background = () => (
         <rect
           id="bg-buttons"
           width={529}
-          height={20}
+          height={1}
           x="36.721"
           y={379}
           fill={context.vizColor}
