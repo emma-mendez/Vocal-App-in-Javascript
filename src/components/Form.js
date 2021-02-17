@@ -73,8 +73,8 @@ function Form() {
         <button 
         type="submit"
         class="buttonf" 
-        ><Link to={"/index"}>close</Link>
-        </button>
+        className='buttonf'><a href="/">Close</a>
+				</button>       
         </form>
 
        
