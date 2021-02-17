@@ -24,6 +24,7 @@ const WavesContainer = styled.div`
 
 const AudioPlayerContainer = styled.div`
   audio {
+    outline: none;
     margin-bottom: 10px;
   }
 `;
