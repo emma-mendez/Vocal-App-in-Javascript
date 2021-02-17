@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import UploadService from "../services/upload-files.service";
 import wavesurfer from 'wavesurfer.js';
+import { Link } from 'react-router-dom';
 
 const FourTrackStudioRecorder = () => {
     const [
@@ -139,6 +140,11 @@ function selectFile (e) {
                 ))}
             </ul>
           </div>
+          <button 
+    class="buttonzing"> 
+    <Link to="/AKJBDABDKJbjbkjbndbfiuesfy783463945783648234iyurwhffbjdvcaca~DSErq6t87ywiau"
+    className='blacktextbutton' >Close</Link> 
+    </button>
         </div>
       );
     }
