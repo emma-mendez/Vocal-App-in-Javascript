@@ -164,8 +164,54 @@ function wavesurf () {
   // Enable/Disable respectively buttons
   buttons.stop.disabled = false;
   buttons.pause.disabled = false;
-  buttons.play.disabled = true;
-})
+  buttons.play.disabled = true;},
+  false);
 
+// Handle Pause Button
+buttons.pause.addEventListener("click", function(){
+  Spectrum.pause();
+
+  // Enable/Disable respectively buttons
+buttons.pause.disabled = true;
+buttons.play.disabled = false;
+
+// Handle Stop button
+buttons.stop.addEventListener("click", function(){
+  Spectrum.stop();
+
+  // Enable/Disable respectively buttons
+buttons.pause.disabled = true;
+buttons.play.disabled = false;
+buttons.stop.disabled = true;
+}, false);
+
+//  Add listener to enable the play button wen ready
+Spectrum.on('ready', function () {
+  buttons.play.disabled = false;
+});
+
+//  responsive mode
+// spectrum remains playable
+window.addEventListener("resize", function(){
+    //  current progress according to cursor position
+    var currentProgress = Spectrum.getCurrentTime() / Spectrum.getDuration();
+
+
+    // Reset grap
+    Spectrum.empty();
+    Spectrum.drawBuffer();
+    // Original position
+    Spectrum.seekTo(currentProgress);
+
+    // Enable/Disable respectively
+    buttons.pause.disabled = true;
+    buttons.play.disabled = false;
+    buttons.stop.disabled = false;
+    }, false);
+
+    // Load the audio from file
+    Spectrum.load('dirty_south_loop_85bpm.mp3');
+  });
 }
+
   export default FourTrackStudioRecorder
