@@ -85,8 +85,9 @@ function RegistrationForm({ handleClose }) {
         name="password"
         type="password"
         placeholder="Choose New Password" />
-        <br/>
-        <br></br>
+        <h1>ONLY CLICK SUBMIT ONCE</h1>
+        <p> Confirmation May Take Up To 30 Secs... </p>
+                <br/>
         <button 
         onSubmit={event => {
           event.preventDefault();

@@ -63,8 +63,11 @@ function Form() {
         type="password"
         placeholder="Password" 
         value={inputUserPassword}
-
-        />
+        /> 
+        <h1>ONLY CLICK SUBMIT ONCE</h1>
+        <p> Confirmation May Take Up To 30 Secs... </p>
+        <br></br>
+        <div>
         <button 
         type="submit"
         class="buttonf" 
@@ -74,10 +77,9 @@ function Form() {
         type="submit"
         class="buttonf" 
         className='buttonf'><a href="/" className='blacktextbutton'>Close</a>
-				</button>       
+				</button>  
+        </div>     
         </form>
-
-       
       </div>
     );
   }
