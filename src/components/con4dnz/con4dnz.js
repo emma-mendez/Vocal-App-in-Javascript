@@ -56,9 +56,11 @@ export default function con4dnz() {
                 </Button>
                 </a>
             <div>
+            <a href="/self-care">
                 <Button theme='' onClick={toDo}>
                 Self Care Session
                 </Button>
+                </a>
             </div>
             <div>
                 <Button theme='' onClick={toDo}>
