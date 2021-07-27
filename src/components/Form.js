@@ -64,8 +64,8 @@ function Form() {
         placeholder="Password" 
         value={inputUserPassword}
         /> 
-        <h1>ONLY CLICK SUBMIT ONCE</h1>
-        <p> Confirmation May Take Up To 30 Secs... </p>
+        <h1>WAIT UP TO 30 Seconds</h1>
+        <p> CLICK ONCE! </p>
         <br></br>
         <div>
         <button 
